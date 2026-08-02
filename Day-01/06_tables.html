@@ -1,17 +1,4 @@
 <!DOCTYPE html>
-<!--
-================================================================================
-AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
-Day 01 - Exercise 06: Data Tables (<table>, <thead>, <tbody>, <tfoot>)
-Developer: Kalyani Velukar
-================================================================================
-Learning Objectives:
-1. Understand table layout using <table>, <tr> (table row), <th> (header cell), and <td> (data cell).
-2. Group content semantically using <caption>, <thead>, <tbody>, and <tfoot>.
-3. Master column spanning (colspan) and row spanning (rowspan) for complex tabular data.
-4. Utilize pure HTML table formatting attributes (border, cellpadding, cellspacing).
-================================================================================
--->
 
 <html lang="en">
 <head>
@@ -25,13 +12,11 @@ Learning Objectives:
     <p>Tables present structured, tabular information clear and accessible to web visitors.</p>
     <hr>
 
-    <!-- SECTION 1: BASIC SEMANTIC HTML TABLE -->
     <h2>1. Basic Structured Table with Headers &amp; Footer</h2>
     
     <table border="1" cellpadding="8" cellspacing="0">
         <caption><strong>Table 1: AD TECH MERN Foundation Learning Program Schedule</strong></caption>
         
-        <!-- Table Header Section -->
         <thead>
             <tr>
                 <th>Day #</th>
@@ -42,7 +27,6 @@ Learning Objectives:
             </tr>
         </thead>
 
-        <!-- Table Body Section -->
         <tbody>
             <tr>
                 <td>Day 01</td>
@@ -81,7 +65,6 @@ Learning Objectives:
             </tr>
         </tbody>
 
-        <!-- Table Footer Section -->
         <tfoot>
             <tr>
                 <td colspan="4"><strong>Total Program Days Scheduled (Phase 1):</strong></td>
@@ -91,7 +74,6 @@ Learning Objectives:
     </table>
     <hr>
 
-    <!-- SECTION 2: COMPLEX TABLE WITH COLSPAN AND ROWSPAN -->
     <h2>2. Advanced Table with Spanning Rows (&lt;rowspan&gt;) and Columns (&lt;colspan&gt;)</h2>
     <p>
         Use <code>colspan="N"</code> to merge cells horizontally across columns.<br>
@@ -111,7 +93,6 @@ Learning Objectives:
         </thead>
 
         <tbody>
-            <!-- Rowspan Example: Backend Category spans 3 rows -->
             <tr>
                 <td rowspan="3"><strong>Backend Engineering</strong></td>
                 <td>Java / Spring Boot</td>
@@ -149,7 +130,6 @@ Learning Objectives:
         </tbody>
 
         <tfoot>
-            <!-- Colspan Example: Spanning across 3 columns -->
             <tr>
                 <td colspan="3"><strong>Overall Learning Goal:</strong></td>
                 <td><strong>Full-Stack MERN Developer</strong></td>
