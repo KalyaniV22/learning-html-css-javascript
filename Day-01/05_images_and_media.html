@@ -1,18 +1,4 @@
 <!DOCTYPE html>
-<!--
-================================================================================
-AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
-Day 01 - Exercise 05: Images & Media (<img`, `<figure>`, `<figcaption>`)
-Developer: Kalyani Velukar
-================================================================================
-Learning Objectives:
-1. Understand how to embed images using the self-closing <img> tag.
-2. Master the alt attribute for accessibility (WCAG), SEO, and missing image fallbacks.
-3. Control image dimensions using width and height attributes.
-4. Learn semantic image wrapping using <figure> and <figcaption>.
-5. Combine images with hyperlinks to make clickable image buttons.
-================================================================================
--->
 
 <html lang="en">
 <head>
@@ -26,14 +12,12 @@ Learning Objectives:
     <p>Images make web pages visually engaging, informative, and interactive.</p>
     <hr>
 
-    <!-- SECTION 1: BASIC IMAGE INSERTION -->
     <h2>1. Basic Image Tag (&lt;img&gt;) &amp; Accessibility (alt)</h2>
     <p>
         The <code>&lt;img&gt;</code> element is self-closing and requires two primary attributes: 
         <code>src</code> (image file path or URL) and <code>alt</code> (alternate descriptive text).
     </p>
 
-    <!-- SVG Data URI Image representing HTML5 Logo -->
     <h3>Example A: HTML5 Technology Icon</h3>
     <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23e34f26' rx='15'/><text x='50' y='60' font-size='40' font-family='Arial, sans-serif' font-weight='bold' fill='white' text-anchor='middle'>5</text><text x='50' y='85' font-size='16' font-family='Arial, sans-serif' fill='white' text-anchor='middle'>HTML5</text></svg>" 
          alt="HTML5 Technology Logo Icon" 
@@ -52,7 +36,6 @@ Learning Objectives:
     </p>
     <hr>
 
-    <!-- SECTION 2: DIMENSIONS & TOOLTIPS -->
     <h2>2. Image Dimensions and Tooltips</h2>
 
     <h3>Example B: Custom Width, Height &amp; Hover Title Tooltip</h3>
@@ -63,7 +46,6 @@ Learning Objectives:
          title="AD TECH Enterprises Developer Banner">
     <hr>
 
-    <!-- SECTION 3: SEMANTIC FIGURE & FIGCAPTION -->
     <h2>3. Semantic Figure and Caption (&lt;figure&gt; &amp; &lt;figcaption&gt;)</h2>
     <p>
         The <code>&lt;figure&gt;</code> element wraps self-contained content (like diagrams, illustrations, or photos), 
@@ -81,7 +63,6 @@ Learning Objectives:
     </figure>
     <hr>
 
-    <!-- SECTION 4: CLICKABLE IMAGE LINKS -->
     <h2>4. Image as a Hyperlink</h2>
     <p>Nesting an <code>&lt;img&gt;</code> tag inside an <code>&lt;a&gt;</code> tag transforms the image into a clickable button link.</p>
 
