@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 01 - Exercise 04: Hyperlinks & Navigation (<a> Tag)
+Developer: Kalyani Velukar
+================================================================================
+Learning Objectives:
+1. Understand how hyperlinks connect web pages using the <a> tag and href attribute.
+2. Master Absolute URLs (external websites) vs Relative URLs (internal files).
+3. Learn target attributes (target="_blank" to open links in a new browser tab).
+4. Implement internal page section bookmark anchors (#id).
+5. Learn special protocol links (mailto: for emails, tel: for phone calls).
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 01 - Links &amp; Navigation Practice</title>
+</head>
+<body>
+
+    <!-- SECTION BOOKMARK TARGET: TOP OF PAGE -->
+    <header id="top">
+        <h1>Day 01: Hyperlinks and Web Navigation</h1>
+        <p>Links allow users to navigate between pages, jump to sections, download files, and initiate contacts.</p>
+    </header>
+
+    <!-- IN-PAGE NAVIGATION BAR -->
+    <nav>
+        <h3>Table of Contents (Internal Anchor Navigation):</h3>
+        <ul>
+            <li><a href="#external-links">1. External Links (Absolute URLs)</a></li>
+            <li><a href="#internal-links">2. Internal Links (Relative Paths)</a></li>
+            <li><a href="#special-links">3. Email and Phone Protocol Links</a></li>
+            <li><a href="#bookmark-section">4. Bookmark Anchor Section Target</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <!-- SECTION 1: EXTERNAL LINKS -->
+    <section id="external-links">
+        <h2>1. External Links (Absolute URLs)</h2>
+        <p>Absolute URLs specify the complete internet web address including protocol (http:// or https://).</p>
+        
+        <ul>
+            <li>
+                <!-- target="_blank" opens link in new tab. rel="noopener noreferrer" enhances security -->
+                Visit <a href="https://github.com/KalyaniV22/learning-html-css-javascript" target="_blank" rel="noopener noreferrer">Kalyani's GitHub Repository</a> (Opens in new tab).
+            </li>
+            <li>
+                Learn HTML on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>.
+            </li>
+            <li>
+                Official YouTube HTML Tutorial Resource: <a href="https://youtu.be/HcOc7P5BMi4" target="_blank" rel="noopener noreferrer">SuperSimpleDev HTML &amp; CSS Video</a>.
+            </li>
+        </ul>
+    </section>
+    <hr>
+
+    <!-- SECTION 2: INTERNAL LINKS -->
+    <section id="internal-links">
+        <h2>2. Internal Links (Relative Paths)</h2>
+        <p>Relative paths point to files within the local project directory structure.</p>
+        
+        <ul>
+            <li><a href="./01_html_basics_and_structure.html">Go to Exercise 01: HTML Basics &amp; Structure</a></li>
+            <li><a href="./02_text_formatting.html">Go to Exercise 02: Typography &amp; Text Formatting</a></li>
+            <li><a href="./03_lists.html">Go to Exercise 03: HTML Lists</a></li>
+            <li><a href="./notes.md">Read Day 01 Study Notes (markdown file)</a></li>
+            <li><a href="./mini_project_portfolio.html">View Day 01 Mini Project (Personal Portfolio)</a></li>
+        </ul>
+    </section>
+    <hr>
+
+    <!-- SECTION 3: SPECIAL PROTOCOL LINKS -->
+    <section id="special-links">
+        <h2>3. Email, Phone, and Download Links</h2>
+        <p>Special link protocols launch system applications directly from the browser.</p>
+
+        <ul>
+            <li>
+                <strong>Email Link (mailto:):</strong> 
+                <a href="mailto:hradtechenterpriseschepvtltd@gmail.com?subject=TASK-02%20Submission%20Query">
+                    Send Email to AD TECH HR (hradtechenterpriseschepvtltd@gmail.com)
+                </a>
+            </li>
+            <li>
+                <strong>Telephone Link (tel:):</strong> 
+                <a href="tel:+918319358568">Call AD TECH Office (+91 83193 58568)</a>
+            </li>
+            <li>
+                <strong>Image Hyperlink:</strong> Clicking an image as a link:
+                <br>
+                <a href="https://github.com/KalyaniV22" target="_blank">
+                    Clickable Link Placeholder (Go to GitHub Profile)
+                </a>
+            </li>
+        </ul>
+    </section>
+    <hr>
+
+    <!-- SECTION 4: BOOKMARK ANCHOR SECTION -->
+    <section id="bookmark-section">
+        <h2>4. Bookmark Anchor Section Target</h2>
+        <p>
+            This section has an <code>id="bookmark-section"</code> attribute. 
+            When a user clicks a link with <code>href="#bookmark-section"</code>, the browser smoothly jumps down to this exact position on the page.
+        </p>
+        <p>
+            This feature is commonly used for long web pages, single-page navigation bars, and "Back to Top" links.
+        </p>
+
+        <!-- Link back to top anchor -->
+        <p>
+            <a href="#top">⬆️ Back to Top of Page</a>
+        </p>
+    </section>
+
+    <hr>
+    <p><small>Exercise 04 completed by Kalyani Velukar | AD TECH MERN Program</small></p>
+
+</body>
+</html>

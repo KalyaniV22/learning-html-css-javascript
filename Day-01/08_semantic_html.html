@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 01 - Exercise 08: Semantic HTML5 Layout Structure
+Developer: Kalyani Velukar
+================================================================================
+Learning Objectives:
+1. Understand the purpose and SEO/accessibility advantages of Semantic HTML5.
+2. Master core semantic structural elements: <header>, <nav>, <main>, <section>, <article>, <aside>, <footer>.
+3. Build a complete semantic web page document layout without relying on unsemantic <div> containers.
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Semantic HTML5 Structural Layout Exercise - AD TECH Learning Track">
+    <title>Day 01 - Semantic HTML5 Page Layout</title>
+</head>
+<body>
+
+    <!-- 1. PAGE HEADER (<header>) -->
+    <header>
+        <h1>AD TECH Tech Talents Portal</h1>
+        <p>Building Future Tech Talent | MERN Foundation Learning Track</p>
+
+        <!-- 2. MAIN NAVIGATION BAR (<nav>) -->
+        <nav>
+            <ul>
+                <li><a href="#about">About Program</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#articles">Latest Updates</a></li>
+                <li><a href="#sidebar-info">Program Details</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- 3. MAIN UNIQUE CONTENT AREA (<main>) -->
+    <main>
+        
+        <!-- SECTION 1: ABOUT PROGRAM -->
+        <section id="about">
+            <h2>About TASK-02 Developer Learning Program</h2>
+            <p>
+                AD TECH's primary development stack relies on MERN (MongoDB, Express.js, React.js, and Node.js). 
+                This assignment enables backend developers skilled in Java &amp; Spring Boot to master modern frontend technologies 
+                and contribute effectively across full-stack MERN projects.
+            </p>
+        </section>
+        <hr>
+
+        <!-- SECTION 2: CURRICULUM OVERVIEW -->
+        <section id="curriculum">
+            <h2>Learning Modules Overview</h2>
+            <p>The 12-day curriculum is split into three foundational phases:</p>
+            <ol>
+                <li><strong>Phase 1: HTML5 &amp; Semantic Web (Days 1-2):</strong> Layouts, text formatting, forms, and media.</li>
+                <li><strong>Phase 2: CSS3 &amp; Responsive Layouts (Days 3-4):</strong> Box model, Flexbox, Grid, and Media queries.</li>
+                <li><strong>Phase 3: JavaScript ES6+ &amp; Gemini AI Integration (Days 5-11):</strong> DOM scripting, REST APIs, and Vercel deployment.</li>
+            </ol>
+        </section>
+        <hr>
+
+        <!-- SECTION 3: FEATURED ARTICLES (<article>) -->
+        <section id="articles">
+            <h2>Featured Articles &amp; Insights</h2>
+
+            <!-- ARTICLE 1 -->
+            <article>
+                <h3>Why Semantic HTML Matters for Accessible Web Development</h3>
+                <p><small>Published: August 2026 | Author: Kalyani Velukar</small></p>
+                <p>
+                    Semantic HTML tags explicitly convey the structural intent of web content to browser engines, 
+                    screen readers, and web crawlers. Using <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, 
+                    and <code>&lt;article&gt;</code> instead of plain <code>&lt;div&gt;</code> tags dramatically improves 
+                    search engine indexing (SEO) and web accessibility compliance (WCAG).
+                </p>
+            </article>
+
+            <!-- ARTICLE 2 -->
+            <article>
+                <h3>Bridging Backend Java to Frontend MERN Stack</h3>
+                <p><small>Published: August 2026 | Author: Kalyani Velukar</small></p>
+                <p>
+                    Understanding RESTful API communication bridges backend Java Spring Boot services with frontend JavaScript client applications. 
+                    Mastering HTML and DOM manipulation is the first essential milestone in this journey.
+                </p>
+            </article>
+        </section>
+        <hr>
+
+        <!-- 4. TANGENTIAL / SIDEBAR CONTENT (<aside>) -->
+        <aside id="sidebar-info">
+            <h3>Program Quick Facts</h3>
+            <ul>
+                <li><strong>Assigned Trainee:</strong> Kalyani Velukar</li>
+                <li><strong>Target Role:</strong> MERN Developer</li>
+                <li><strong>Daily Commit Protocol:</strong> GitHub Public Tracking</li>
+                <li><strong>Capstone Project:</strong> AI Chatbot Website (Gemini API)</li>
+            </ul>
+        </aside>
+        <hr>
+
+    </main>
+
+    <!-- 5. PAGE FOOTER (<footer>) -->
+    <footer>
+        <p><strong>AD TECH Enterprises Pvt. Ltd.</strong></p>
+        <p>Email: <a href="mailto:hradtechenterpriseschepvtltd@gmail.com">hradtechenterpriseschepvtltd@gmail.com</a> | Phone: +91 83193 58568</p>
+        <p><small>&copy; 2026 AD TECH Enterprises Pvt. Ltd. All rights reserved.</small></p>
+        <p><a href="#">Back to Top ⬆️</a></p>
+    </footer>
+
+</body>
+</html>

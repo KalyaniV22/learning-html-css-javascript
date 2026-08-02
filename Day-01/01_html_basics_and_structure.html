@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 01 - Exercise 01: HTML Basics & Document Structure
+Developer: Kalyani Velukar
+================================================================================
+Learning Objectives:
+1. Understand the fundamental structure of an HTML5 document.
+2. Learn the role of the DOCTYPE declaration, html, head, title, and body tags.
+3. Understand meta tags for character encoding and responsive viewports.
+4. Practice writing clean, commented, and valid HTML markup.
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <!-- Specify character encoding (UTF-8 supports international characters and symbols) -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport tag ensures proper scaling and rendering on mobile and desktop devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Description for Search Engine Optimization (SEO) -->
+    <meta name="description" content="Day 01 HTML Basics and Document Structure Exercise - Kalyani Velukar">
+    <meta name="author" content="Kalyani Velukar">
+
+    <!-- Document Title displayed in the browser tab and search engine results -->
+    <title>Day 01 - HTML Basics &amp; Document Structure</title>
+</head>
+
+<body>
+    <!-- 
+        The <body> tag contains all visible content that users see on the browser canvas.
+        Everything inside <body> is parsed and rendered visually.
+    -->
+
+    <!-- Main Page Heading -->
+    <h1>Welcome to Day 01: HTML Document Structure</h1>
+    <hr> <!-- Horizontal Rule creates a visual thematic break line -->
+
+    <!-- Section 1: Introduction -->
+    <h2>1. Understanding the HTML Skeleton</h2>
+    <p>
+        HTML (HyperText Markup Language) uses <strong>tags</strong> to define elements on a web page. 
+        Every standard HTML5 page requires a specific structure starting with the <code>&lt;!DOCTYPE html&gt;</code> declaration.
+    </p>
+
+    <!-- Section 2: Core Components Breakdown -->
+    <h2>2. Key Structural Components</h2>
+    <ul>
+        <li>
+            <strong>&lt;!DOCTYPE html&gt;:</strong> Tells the web browser that this document is written in standard HTML5.
+        </li>
+        <li>
+            <strong>&lt;html lang="en"&gt;:</strong> The root element of the entire webpage. The <code>lang="en"</code> attribute defines English as the primary language.
+        </li>
+        <li>
+            <strong>&lt;head&gt;:</strong> Contains hidden metadata, character set configurations, external links, and the browser tab title.
+        </li>
+        <li>
+            <strong>&lt;body&gt;:</strong> Contains all user-visible page elements like text, images, links, tables, and buttons.
+        </li>
+    </ul>
+
+    <!-- Section 3: Demonstration of HTML Comments -->
+    <h2>3. HTML Comments Demonstration</h2>
+    <p>
+        Comments in HTML start with <code>&lt;!--</code> and end with <code>--&gt;</code>. 
+        Browsers completely ignore comments during rendering, making them perfect for developer documentation.
+    </p>
+
+    <!-- This is a single-line comment hidden from the browser UI -->
+
+    <!--
+        This is a multi-line comment.
+        Comments help explain code logic, structure sections,
+        and make code beginner-friendly and maintainable!
+    -->
+
+    <!-- Footer Note -->
+    <hr>
+    <p>
+        <small>Exercise 01 completed as part of AD TECH MERN Foundation Learning Track.</small>
+    </p>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 01 - Exercise 07: Block-level vs Inline-level Elements
+Developer: Kalyani Velukar
+================================================================================
+Learning Objectives:
+1. Understand the core layout behavior of Block-level elements.
+2. Understand the core layout behavior of Inline-level elements.
+3. Master the generic container elements: <div> (block wrapper) and <span> (inline wrapper).
+4. Understand rules regarding nesting elements inside block vs inline elements.
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 01 - Block vs Inline Elements Practice</title>
+</head>
+<body>
+
+    <h1>Day 01: Block-level vs Inline-level Elements</h1>
+    <p>Every HTML element has a default display behavior: either <strong>Block</strong> or <strong>Inline</strong>.</p>
+    <hr>
+
+    <!-- SECTION 1: BLOCK-LEVEL ELEMENTS -->
+    <h2>1. Block-Level Elements (&lt;div&gt;, &lt;p&gt;, &lt;h1&gt;, &lt;ul&gt;)</h2>
+    <p>
+        <strong>Characteristics of Block-level Elements:</strong>
+        <br>
+        • Always start on a <strong>new line</strong> in the document flow.
+        <br>
+        • Automatically expand to take up <strong>100% of the available width</strong> of their parent container.
+        <br>
+        • Can contain both other block elements and inline elements.
+    </p>
+
+    <h3>Common Block-level Examples:</h3>
+    
+    <!-- Block Example 1 -->
+    <div>
+        <p>This paragraph is inside a block-level <code>&lt;div&gt;</code> element.</p>
+    </div>
+
+    <!-- Block Example 2 -->
+    <div>
+        <p>This is a separate block-level <code>&lt;div&gt;</code> element. Notice how it starts on a brand new line!</p>
+    </div>
+
+    <h4>List of Core Block-Level Tags:</h4>
+    <ul>
+        <li><code>&lt;div&gt;</code> - Generic block container</li>
+        <li><code>&lt;p&gt;</code> - Paragraph text block</li>
+        <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> - Heading blocks</li>
+        <li><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> - List structures</li>
+        <li><code>&lt;form&gt;</code>, <code>&lt;table&gt;</code> - Form and Table wrappers</li>
+        <li><code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code> - HTML5 Semantic containers</li>
+    </ul>
+    <hr>
+
+    <!-- SECTION 2: INLINE-LEVEL ELEMENTS -->
+    <h2>2. Inline-Level Elements (&lt;span&gt;, &lt;a&gt;, &lt;b&gt;, &lt;img&gt;)</h2>
+    <p>
+        <strong>Characteristics of Inline-level Elements:</strong>
+        <br>
+        • Do <strong>NOT</strong> start on a new line. They sit side-by-side on the same line as surrounding text.
+        <br>
+        • Take up only as much width as their content requires.
+        <br>
+        • Should generally contain only text or other inline elements (NOT block elements).
+    </p>
+
+    <h3>Common Inline-level Examples:</h3>
+    
+    <p>
+        In this sentence, <span>this text is wrapped inside a &lt;span&gt; tag</span>, 
+        followed by a <a href="https://github.com" target="_blank">hyperlink (&lt;a&gt;)</a>, 
+        and some <strong>bold text (&lt;strong&gt;)</strong>, plus a <mark>highlighted word (&lt;mark&gt;)</mark>. 
+        All of these elements stay together on the <em>exact same line</em>!
+    </p>
+
+    <h4>List of Core Inline-Level Tags:</h4>
+    <ul>
+        <li><code>&lt;span&gt;</code> - Generic inline container</li>
+        <li><code>&lt;a&gt;</code> - Hyperlink anchor</li>
+        <li><code>&lt;strong&gt;</code>, <code>&lt;b&gt;</code> - Bold / important text</li>
+        <li><code>&lt;em&gt;</code>, <code>&lt;i&gt;</code> - Italic / emphasis text</li>
+        <li><code>&lt;mark&gt;</code> - Highlighted text</li>
+        <li><code>&lt;code&gt;</code> - Monospaced code text</li>
+        <li><code>&lt;img&gt;</code> - Inline image element</li>
+    </ul>
+    <hr>
+
+    <!-- SECTION 3: COMPARISON MATRIX TABLE -->
+    <h2>3. Side-by-Side Summary Matrix</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Block-Level Elements</th>
+                <th>Inline-Level Elements</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>New Line?</strong></td>
+                <td>Yes, starts on a new line.</td>
+                <td>No, stays on the same line.</td>
+            </tr>
+            <tr>
+                <td><strong>Width Occupied</strong></td>
+                <td>100% parent container width.</td>
+                <td>Only as wide as content inside.</td>
+            </tr>
+            <tr>
+                <td><strong>Generic Container Tag</strong></td>
+                <td><code>&lt;div&gt;</code></td>
+                <td><code>&lt;span&gt;</code></td>
+            </tr>
+            <tr>
+                <td><strong>Nesting Rule</strong></td>
+                <td>Can contain block and inline elements.</td>
+                <td>Can contain text and inline elements only.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <p><small>Exercise 07 completed by Kalyani Velukar | AD TECH MERN Program</small></p>
+
+</body>
+</html>

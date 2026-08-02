@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 01 - Exercise 06: Data Tables (<table>, <thead>, <tbody>, <tfoot>)
+Developer: Kalyani Velukar
+================================================================================
+Learning Objectives:
+1. Understand table layout using <table>, <tr> (table row), <th> (header cell), and <td> (data cell).
+2. Group content semantically using <caption>, <thead>, <tbody>, and <tfoot>.
+3. Master column spanning (colspan) and row spanning (rowspan) for complex tabular data.
+4. Utilize pure HTML table formatting attributes (border, cellpadding, cellspacing).
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 01 - HTML Data Tables Practice</title>
+</head>
+<body>
+
+    <h1>Day 01: Creating Structured Data Tables in HTML</h1>
+    <p>Tables present structured, tabular information clear and accessible to web visitors.</p>
+    <hr>
+
+    <!-- SECTION 1: BASIC SEMANTIC HTML TABLE -->
+    <h2>1. Basic Structured Table with Headers &amp; Footer</h2>
+    
+    <table border="1" cellpadding="8" cellspacing="0">
+        <caption><strong>Table 1: AD TECH MERN Foundation Learning Program Schedule</strong></caption>
+        
+        <!-- Table Header Section -->
+        <thead>
+            <tr>
+                <th>Day #</th>
+                <th>Core Subject</th>
+                <th>Topic / Focus Area</th>
+                <th>Primary Deliverable</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body Section -->
+        <tbody>
+            <tr>
+                <td>Day 01</td>
+                <td>HTML5 Core</td>
+                <td>Document Structure, Tags, Lists, Links, Images &amp; Tables</td>
+                <td>HTML Portfolio Mini Project</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Day 02</td>
+                <td>HTML5 Forms</td>
+                <td>Form Controls, Input Types, Labels, Attributes &amp; Validation</td>
+                <td>Interactive HTML Form Project</td>
+                <td>Upcoming</td>
+            </tr>
+            <tr>
+                <td>Day 03</td>
+                <td>CSS3 Basics</td>
+                <td>Box Model, Selectors, Colors, Fonts &amp; Flexbox Layouts</td>
+                <td>Responsive Flexbox Page</td>
+                <td>Upcoming</td>
+            </tr>
+            <tr>
+                <td>Day 04</td>
+                <td>CSS3 Advanced</td>
+                <td>CSS Grid, Positioning, Animations &amp; Media Queries</td>
+                <td>CSS Mini Landing Page</td>
+                <td>Upcoming</td>
+            </tr>
+            <tr>
+                <td>Day 05</td>
+                <td>JavaScript Basics</td>
+                <td>Variables, Data Types, Operators, Functions &amp; Control Flow</td>
+                <td>JS Algorithmic Practice</td>
+                <td>Upcoming</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer Section -->
+        <tfoot>
+            <tr>
+                <td colspan="4"><strong>Total Program Days Scheduled (Phase 1):</strong></td>
+                <td><strong>5 Days</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+
+    <!-- SECTION 2: COMPLEX TABLE WITH COLSPAN AND ROWSPAN -->
+    <h2>2. Advanced Table with Spanning Rows (&lt;rowspan&gt;) and Columns (&lt;colspan&gt;)</h2>
+    <p>
+        Use <code>colspan="N"</code> to merge cells horizontally across columns.<br>
+        Use <code>rowspan="N"</code> to merge cells vertically across rows.
+    </p>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <caption><strong>Table 2: Developer Skills &amp; Technology Stack Matrix</strong></caption>
+        
+        <thead>
+            <tr>
+                <th>Domain Category</th>
+                <th>Technology</th>
+                <th>Proficiency Level</th>
+                <th>Years / Learning Phase</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Rowspan Example: Backend Category spans 3 rows -->
+            <tr>
+                <td rowspan="3"><strong>Backend Engineering</strong></td>
+                <td>Java / Spring Boot</td>
+                <td>Advanced / Experienced</td>
+                <td>Active Backend Skillset</td>
+            </tr>
+            <tr>
+                <td>RESTful APIs</td>
+                <td>Proficient</td>
+                <td>Active Backend Skillset</td>
+            </tr>
+            <tr>
+                <td>MySQL Database</td>
+                <td>Intermediate</td>
+                <td>Active Backend Skillset</td>
+            </tr>
+
+            <!-- Rowspan Example: Frontend Category spans 3 rows -->
+            <tr>
+                <td rowspan="3"><strong>Frontend &amp; MERN (Learning Track)</strong></td>
+                <td>HTML5 &amp; Semantic Web</td>
+                <td>Beginner / Learning</td>
+                <td>AD TECH Day 01</td>
+            </tr>
+            <tr>
+                <td>CSS3 &amp; Flexbox / Grid</td>
+                <td>Learning Track</td>
+                <td>AD TECH Days 03-04</td>
+            </tr>
+            <tr>
+                <td>JavaScript &amp; React.js</td>
+                <td>Learning Track</td>
+                <td>AD TECH Days 05-08</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <!-- Colspan Example: Spanning across 3 columns -->
+            <tr>
+                <td colspan="3"><strong>Overall Learning Goal:</strong></td>
+                <td><strong>Full-Stack MERN Developer</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+    <p><small>Exercise 06 completed by Kalyani Velukar | AD TECH MERN Program</small></p>
+
+</body>
+</html>
