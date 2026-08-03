@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 02 - Exercise 03: Selection Controls (Radio, Checkbox, Select & Datalist)
+Developer: Kalyani Velukar
+================================================================================
+Learning Objectives:
+1. Understand Radio buttons (type="radio") for single-choice choices within a shared name group.
+2. Understand Checkboxes (type="checkbox") for multiple independent selections.
+3. Master dropdown menus (<select>, <option>, <optgroup>, multiple).
+4. Implement HTML5 autocomplete suggestions using <datalist>.
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 02 - Selection Controls Practice</title>
+</head>
+<body>
+
+    <h1>Day 02: Selection Controls in HTML Forms</h1>
+    <p>Selection controls allow users to pick from pre-defined options or type suggestions.</p>
+    <hr>
+
+    <form action="#" method="post">
+
+        <!-- SECTION 1: RADIO BUTTONS (SINGLE SELECTION) -->
+        <h2>1. Radio Buttons (Select EXACTLY One Choice)</h2>
+        <p>
+            <em>Rule:</em> All radio inputs in the same logical choice group <strong>MUST share the exact same <code>name</code> attribute</strong>!
+        </p>
+
+        <p><strong>Primary Development Track Preferred: *</strong></p>
+        <p>
+            <input type="radio" id="track-mern" name="dev_track" value="mern" checked>
+            <label for="track-mern">MERN Stack (MongoDB, Express.js, React.js, Node.js)</label>
+            <br>
+            <input type="radio" id="track-java" name="dev_track" value="java_spring">
+            <label for="track-java">Java Spring Boot Microservices Track</label>
+            <br>
+            <input type="radio" id="track-fullstack" name="dev_track" value="fullstack_polyglot">
+            <label for="track-fullstack">Polyglot Full-Stack Engineering</label>
+        </p>
+        <hr>
+
+        <!-- SECTION 2: CHECKBOXES (MULTIPLE SELECTIONS) -->
+        <h2>2. Checkboxes (Select Any Number of Choices)</h2>
+        <p>Checkboxes operate independently, allowing users to check zero, one, or multiple boxes.</p>
+
+        <p><strong>Select Backend &amp; Database Technologies You Have Worked With:</strong></p>
+        <p>
+            <input type="checkbox" id="skill-java" name="skills" value="java" checked>
+            <label for="skill-java">Java / Spring Boot</label>
+            <br>
+            <input type="checkbox" id="skill-mysql" name="skills" value="mysql" checked>
+            <label for="skill-mysql">MySQL / Relational DBs</label>
+            <br>
+            <input type="checkbox" id="skill-rest" name="skills" value="rest_api" checked>
+            <label for="skill-rest">RESTful APIs Design</label>
+            <br>
+            <input type="checkbox" id="skill-mongo" name="skills" value="mongodb">
+            <label for="skill-mongo">MongoDB (Document DB)</label>
+            <br>
+            <input type="checkbox" id="skill-node" name="skills" value="nodejs">
+            <label for="skill-node">Node.js &amp; Express.js</label>
+        </p>
+        <hr>
+
+        <!-- SECTION 3: DROPDOWN LISTS (<select>, <optgroup>) -->
+        <h2>3. Dropdown Select Menus (&lt;select&gt;, &lt;option&gt;, &lt;optgroup&gt;)</h2>
+
+        <p>
+            <label for="current-city">Select Your Operating Region / City: *</label><br>
+            <select id="current-city" name="current_city" required>
+                <option value="">-- Choose City --</option>
+
+                <!-- Grouping options under category labels with <optgroup> -->
+                <optgroup label="India (Primary Tech Hubs)">
+                    <option value="bhopal">Bhopal</option>
+                    <option value="indore">Indore</option>
+                    <option value="bengaluru">Bengaluru</option>
+                    <option value="pune">Pune</option>
+                    <option value="hyderabad">Hyderabad</option>
+                </optgroup>
+
+                <optgroup label="International Offices">
+                    <option value="singapore">Singapore</option>
+                    <option value="london">London, UK</option>
+                    <option value="newyork">New York, USA</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="multi-modules">Select Preferred Daily Modules (Hold Ctrl/Cmd to select multiple):</label><br>
+            <!-- multiple attribute allows selecting multiple items in dropdown -->
+            <select id="multi-modules" name="multi_modules" multiple size="4">
+                <option value="day1">Day 1: HTML Basics &amp; Structure</option>
+                <option value="day2" selected>Day 2: HTML Forms &amp; Multimedia</option>
+                <option value="day3">Day 3: CSS Flexbox Layouts</option>
+                <option value="day4">Day 4: CSS Grid &amp; Positioning</option>
+                <option value="day5">Day 5: JavaScript Logic &amp; Loops</option>
+            </select>
+        </p>
+        <hr>
+
+        <!-- SECTION 4: DATALIST AUTOCOMPLETE -->
+        <h2>4. HTML5 Autocomplete Datalist (&lt;datalist&gt;)</h2>
+        <p>Combines text input typing with dropdown suggestion list for faster data entry.</p>
+
+        <p>
+            <label for="ide-choice">Type or Select Your Favorite Code Editor / IDE:</label><br>
+            <!-- input list attribute connects to datalist id -->
+            <input type="text" id="ide-choice" name="ide_choice" list="ide-list" placeholder="Start typing e.g. VS Code...">
+
+            <!-- <datalist> holds pre-defined auto-suggestions -->
+            <datalist id="ide-list">
+                <option value="Visual Studio Code (VS Code)">
+                <option value="IntelliJ IDEA Ultimate">
+                <option value="Eclipse IDE">
+                <option value="Sublime Text">
+                <option value="WebStorm">
+                <option value="Vim / Neovim">
+            </datalist>
+        </p>
+
+        <p>
+            <button type="submit">Submit Selections 🎯</button>
+        </p>
+
+    </form>
+
+    <hr>
+    <p><small>Exercise 03 completed by Kalyani Velukar | AD TECH MERN Program</small></p>
+
+</body>
+</html>

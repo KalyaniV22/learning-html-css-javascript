@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 02 - Exercise 02: HTML5 Input Types & Control Attributes
+Developer: Kalyani Velukar
+================================================================================
+Learning Objectives:
+1. Survey modern HTML5 input types (date, time, color, range, file, tel, url, search, hidden).
+2. Understand input control attributes: required, placeholder, value, min, max, step, readonly, disabled, autofocus, pattern.
+3. Observe browser native pickers (date picker, color picker, file chooser, range slider).
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 02 - HTML5 Input Types &amp; Attributes</title>
+</head>
+<body>
+
+    <h1>Day 02: Survey of HTML5 Input Types &amp; Attributes</h1>
+    <p>HTML5 introduced native pickers and validation rules for rich user input collection.</p>
+    <hr>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        
+        <!-- SECTION 1: DATE AND TIME INPUTS -->
+        <h2>1. Date and Time Pickers</h2>
+        
+        <p>
+            <label for="start-date">Program Start Date (Date Picker):</label><br>
+            <!-- type="date" opens native calendar widget -->
+            <input type="date" id="start-date" name="start_date" min="2026-08-01" max="2026-12-31" value="2026-08-01">
+        </p>
+
+        <p>
+            <label for="daily-time">Daily Standup Time (Time Picker):</label><br>
+            <!-- type="time" opens native time selector -->
+            <input type="time" id="daily-time" name="daily_time" value="10:00">
+        </p>
+
+        <p>
+            <label for="deadline-dt">Project Submission Deadline (DateTime-Local):</label><br>
+            <!-- type="datetime-local" combines date and time -->
+            <input type="datetime-local" id="deadline-dt" name="deadline_dt" value="2026-08-12T19:00">
+        </p>
+        <hr>
+
+        <!-- SECTION 2: SPECIALIZED INPUT TYPES -->
+        <h2>2. Specialized Input Types (Color, Range, File, Phone, URL)</h2>
+
+        <p>
+            <label for="theme-color">Choose Primary Portfolio Color (Color Picker):</label><br>
+            <!-- type="color" opens native OS color wheel -->
+            <input type="color" id="theme-color" name="theme_color" value="#38bdf8">
+        </p>
+
+        <p>
+            <label for="skill-rating">Self-Assessed Skill Level in Java (Range Slider 0 to 100):</label><br>
+            <!-- type="range" creates a slider control -->
+            <input type="range" id="skill-rating" name="skill_rating" min="0" max="100" value="85" step="5">
+            <small>(Slide to select proficiency percentage)</small>
+        </p>
+
+        <p>
+            <label for="resume-upload">Upload Resume PDF / Document (File Chooser):</label><br>
+            <!-- type="file" creates a file chooser button. accept restricts file types -->
+            <input type="file" id="resume-upload" name="resume_file" accept=".pdf,.docx,.doc">
+        </p>
+
+        <p>
+            <label for="phone-num">Contact Phone Number (type="tel"):</label><br>
+            <!-- type="tel" triggers numeric phone keypad on mobile devices -->
+            <input type="tel" id="phone-num" name="phone_num" placeholder="+91 83193 58568" pattern="[+0-9\s-]{10,15}">
+        </p>
+
+        <p>
+            <label for="github-url">GitHub Profile Web Address (type="url"):</label><br>
+            <!-- type="url" validates http:// or https:// protocol prefix -->
+            <input type="url" id="github-url" name="github_url" placeholder="https://github.com/KalyaniV22" size="45">
+        </p>
+
+        <p>
+            <label for="search-topic">Search Learning Topics (type="search"):</label><br>
+            <!-- type="search" provides quick text clearing button on modern browsers -->
+            <input type="search" id="search-topic" name="search_topic" placeholder="Type topic e.g. Flexbox...">
+        </p>
+
+        <!-- Hidden input field sends metadata quietly without visual UI -->
+        <input type="hidden" id="task-id" name="task_id" value="TASK-02-ADTECH">
+        <hr>
+
+        <!-- SECTION 3: ATTRIBUTES & CONSTRAINTS -->
+        <h2>3. Control Attributes (Readonly, Disabled, Autofocus)</h2>
+
+        <p>
+            <label for="assigned-role">Assigned Role (Readonly Attribute):</label><br>
+            <!-- readonly: User cannot edit, but field value IS submitted with form -->
+            <input type="text" id="assigned-role" name="assigned_role" value="Backend Developer (Learning Track)" readonly size="40">
+        </p>
+
+        <p>
+            <label for="system-id">System Reference Key (Disabled Attribute):</label><br>
+            <!-- disabled: Field is greyed out and NOT submitted with form -->
+            <input type="text" id="system-id" name="system_id" value="AD-SYS-83193" disabled size="30">
+        </p>
+
+        <p>
+            <button type="submit">Submit Form Data 🚀</button>
+        </p>
+
+    </form>
+
+    <hr>
+    <p><small>Exercise 02 completed by Kalyani Velukar | AD TECH MERN Program</small></p>
+
+</body>
+</html>

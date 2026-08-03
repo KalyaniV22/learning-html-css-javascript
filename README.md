@@ -23,7 +23,7 @@ The goal is to practice writing clean, semantic, and maintainable frontend code 
 | Day | Module / Topic | Status | Key Deliverables & Commit Message |
 | :--- | :--- | :---: | :--- |
 | **Day 01** | **HTML Basics & Document Structure** | 🟢 Completed | Practice files, Notes, HTML Portfolio Mini Project (`Day 1 - Learned HTML Basics`) |
-| **Day 02** | **HTML Forms & Advanced Elements** | 🟢 Completed | Form controls, input validation, multimedia (`Day 2 - Completed HTML Forms`) |
+| **Day 02** | **HTML Forms & Advanced Elements** | 🟢 Completed | Form controls, input validation, multimedia, Registration Mini Project (`Day 2 - Completed HTML Forms`) |
 | **Day 03** | **CSS Flexbox & Layout Systems** | ⚪ Pending | CSS Box Model, Flexbox layout exercises (`Day 3 - CSS Flexbox Practice`) |
 | **Day 04** | **CSS Grid, Positioning & Mini Projects** | ⚪ Pending | CSS Grid, Positioning, Responsive Mini Projects (`Day 4 - CSS Mini Project`) |
 | **Day 05** | **JavaScript Fundamentals & Logic** | ⚪ Pending | Variables, Data Types, Control Loops, Functions (`Day 5 - JavaScript Variables & Loops`) |
@@ -42,18 +42,29 @@ The goal is to practice writing clean, semantic, and maintainable frontend code 
 ```text
 learning-html-css-javascript/
 ├── README.md                           # Main repository overview and 12-day roadmap tracker
-└── Day-01/                             # Day 1: HTML Basics & Semantic Web
-    ├── README.md                       # Day 1 curriculum, overview & execution guide
-    ├── notes.md                        # Comprehensive study notes on HTML fundamentals
-    ├── 01_html_basics_and_structure.html# Exercise 1: HTML Document Structure & Metadata
-    ├── 02_text_formatting.html         # Exercise 2: Typography & Text Formatting Tags
-    ├── 03_lists.html                   # Exercise 3: Unordered, Ordered & Description Lists
-    ├── 04_links_and_navigation.html    # Exercise 4: Hyperlinks, Anchors, and Targets
-    ├── 05_images_and_media.html        # Exercise 5: Images, Figures & Media Attributes
-    ├── 06_tables.html                  # Exercise 6: Structured HTML Data Tables
-    ├── 07_block_vs_inline.html         # Exercise 7: Block-level vs Inline-level Elements
-    ├── 08_semantic_html.html           # Exercise 8: Modern HTML5 Semantic Layout Tags
-    └── mini_project_portfolio.html     # Mini Project: Pure HTML Personal Portfolio Website
+├── Day-01/                             # Day 1: HTML Basics & Semantic Web
+│   ├── README.md                       # Day 1 curriculum, overview & execution guide
+│   ├── notes.md                        # Comprehensive study notes on HTML fundamentals
+│   ├── 01_html_basics_and_structure.html# Exercise 1: HTML Document Structure & Metadata
+│   ├── 02_text_formatting.html         # Exercise 2: Typography & Text Formatting Tags
+│   ├── 03_lists.html                   # Exercise 3: Unordered, Ordered & Description Lists
+│   ├── 04_links_and_navigation.html    # Exercise 4: Hyperlinks, Anchors, and Targets
+│   ├── 05_images_and_media.html        # Exercise 5: Images, Figures & Media Attributes
+│   ├── 06_tables.html                  # Exercise 6: Structured HTML Data Tables
+│   ├── 07_block_vs_inline.html         # Exercise 7: Block-level vs Inline-level Elements
+│   ├── 08_semantic_html.html           # Exercise 8: Modern HTML5 Semantic Layout Tags
+│   └── mini_project_portfolio.html     # Mini Project: Pure HTML Personal Portfolio Website
+└── Day-02/                             # Day 2: HTML Forms & Advanced Elements
+    ├── README.md                       # Day 2 curriculum overview & guide
+    ├── notes.md                        # Study notes on HTML Forms, Input Types, Validation & Multimedia
+    ├── 01_basic_forms_and_inputs.html  # Exercise 1: Form tag, labels, text, password, email, submit/reset
+    ├── 02_input_types_and_attributes.html# Exercise 2: HTML5 Input Types & Validation attributes
+    ├── 03_selection_controls.html      # Exercise 3: Checkboxes, Radio, Select, Optgroup & Datalist
+    ├── 04_form_grouping_and_validation.html# Exercise 4: Fieldset, Legend, Regex Patterns & Validation
+    ├── 05_multimedia_audio_video.html  # Exercise 5: HTML5 Audio & Video elements with controls
+    ├── 06_iframes_and_embeds.html      # Exercise 6: Embedding content with Iframes
+    ├── 07_advanced_html5_elements.html # Exercise 7: Details, Summary, Progress, Meter & Dialog
+    └── mini_project_registration_form.html # Mini Project: AD TECH Developer Program Registration Portal
 ```
 
 ---
@@ -67,8 +78,7 @@ learning-html-css-javascript/
    ```
 
 2. **Open Exercises & Projects:**
-   - Simply double-click any `.html` file inside the `Day-01/` folder to open it directly in your web browser (Google Chrome, Firefox, Edge, etc.).
-   - Alternatively, open the folder in **VS Code** and use the **Live Server** extension.
+   - Double-click any `.html` file inside `Day-01/` or `Day-02/` to open it directly in your web browser.
 
 ---
 

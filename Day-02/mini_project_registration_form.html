@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 02 Mini Project: AD TECH Developer Registration & Assessment Portal
+Developer: Kalyani Velukar (Backend Developer / MERN Trainee)
+================================================================================
+Project Overview:
+This project is built strictly using Pure Semantic HTML5 without external CSS or 
+JavaScript (as mandated by Day-02 requirements). It demonstrates complete mastery of 
+HTML Forms (<form>, <fieldset>, <legend>), all input types (text, email, tel, url, 
+number, date, time, color, range, file, checkbox, radio, hidden), selection controls 
+(<select>, <optgroup>, <datalist>), HTML5 validation (required, pattern, min/max), 
+multimedia (<video>, <audio>), and advanced controls (<details>, <progress>, <meter>).
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <!-- Document Encoding & Viewport Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AD TECH Developer Program Registration & Technical Assessment Portal - Kalyani Velukar">
+    <meta name="author" content="Kalyani Velukar">
+
+    <!-- Browser Tab Title -->
+    <title>AD TECH Developer Registration &amp; Technical Assessment Portal (Pure HTML)</title>
+</head>
+
+<body>
+
+    <!-- ======================================================================= -->
+    <!-- 1. PAGE HEADER                                                          -->
+    <!-- ======================================================================= -->
+    <header id="top">
+        <!-- Enterprise Header Logo Graphic -->
+        <figure>
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='450' height='100' viewBox='0 0 450 100'><rect width='450' height='100' fill='%230f172a' rx='10'/><circle cx='50' cy='50' r='30' fill='%2338bdf8'/><text x='50' y='58' font-size='22' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>AD</text><text x='100' y='48' font-size='22' font-family='sans-serif' font-weight='bold' fill='%23f8fafc'>AD TECH ENTERPRISES PVT. LTD.</text><text x='100' y='72' font-size='14' font-family='sans-serif' fill='%2338bdf8'>Building Future Tech Talent | MERN Program</text></svg>" 
+                 alt="AD TECH Enterprises Company Logo" 
+                 width="450" 
+                 height="100" 
+                 title="AD TECH Enterprises Pvt. Ltd.">
+        </figure>
+
+        <h1>AD TECH Developer Learning Program (TASK-02)</h1>
+        <h2>Official Registration &amp; Technical Assessment Portal</h2>
+        <p><strong>Assigned Candidate:</strong> Kalyani Velukar | <strong>Role:</strong> Backend Developer (Learning Track)</p>
+        <p><small>Program Schedule: 01 August – 12 August 2026 | Deadline: 12 August 2026, 7:00 PM IST</small></p>
+
+        <!-- Quick Section Jump Navigation Bar -->
+        <nav>
+            <h3>Portal Form Sections:</h3>
+            <ul>
+                <li><a href="#sec-personal">1. Applicant Identity</a></li>
+                <li><a href="#sec-technical">2. Technical Background &amp; Skills</a></li>
+                <li><a href="#sec-program">3. MERN Program Preferences</a></li>
+                <li><a href="#sec-media">4. Media &amp; Resume Uploads</a></li>
+                <li><a href="#sec-progress">5. Assessment Metrics &amp; Guidelines</a></li>
+                <li><a href="#sec-declaration">6. Code Integrity Declaration</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- ======================================================================= -->
+    <!-- 2. MAIN REGISTRATION FORM                                              -->
+    <!-- ======================================================================= -->
+    <main>
+        
+        <!-- 
+            Form uses enctype="multipart/form-data" to support file uploads.
+            Submits via method="POST" to action="#".
+        -->
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <!-- --------------------------------------------------------------- -->
+            <!-- SECTION 1: APPLICANT PERSONAL & CONTACT IDENTITY                -->
+            <!-- --------------------------------------------------------------- -->
+            <fieldset id="sec-personal">
+                <legend><strong>Section 1: Applicant Identity &amp; Contact Information</strong></legend>
+                
+                <p>
+                    <label for="applicant-fname">First Name: *</label><br>
+                    <input type="text" id="applicant-fname" name="applicant_fname" value="Kalyani" required minlength="2" maxlength="30" autofocus size="35">
+                </p>
+
+                <p>
+                    <label for="applicant-lname">Last Name: *</label><br>
+                    <input type="text" id="applicant-lname" name="applicant_lname" value="Velukar" required minlength="2" maxlength="30" size="35">
+                </p>
+
+                <p>
+                    <label for="applicant-email">Official Corporate Email Address: *</label><br>
+                    <input type="email" id="applicant-email" name="applicant_email" placeholder="kalyani@adtech.com" required size="40">
+                </p>
+
+                <p>
+                    <label for="applicant-phone">Mobile Phone Number (type="tel"): *</label><br>
+                    <input type="tel" id="applicant-phone" name="applicant_phone" placeholder="+91 83193 58568" pattern="[+0-9\s-]{10,15}" required size="30">
+                    <br><small>Format: <code>+91 XXXXX XXXXX</code></small>
+                </p>
+
+                <p>
+                    <label for="emp-id-code">Employee Verification Code (Regex Pattern: AD-XXXXX): *</label><br>
+                    <input type="text" id="emp-id-code" name="emp_id_code" value="AD-83193" pattern="AD-[0-9]{5}" title="Code must start with 'AD-' followed by 5 digits" required size="25">
+                    <br><small>Example: <code>AD-83193</code></small>
+                </p>
+
+                <p>
+                    <label for="dob">Date of Birth (Date Picker):</label><br>
+                    <input type="date" id="dob" name="dob" max="2008-01-01" value="2000-05-15">
+                </p>
+
+                <p>
+                    <label for="location-hub">Primary Base Tech Hub / Office City: *</label><br>
+                    <select id="location-hub" name="location_hub" required>
+                        <option value="">-- Select Hub --</option>
+                        <optgroup label="India Hubs">
+                            <option value="bhopal" selected>Bhopal Office</option>
+                            <option value="indore">Indore Center</option>
+                            <option value="bengaluru">Bengaluru Tech Park</option>
+                            <option value="pune">Pune Innovation Hub</option>
+                        </optgroup>
+                        <optgroup label="Global Remote">
+                            <option value="remote_asia">Remote - Asia Pacific</option>
+                            <option value="remote_global">Remote - Global</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <!-- Hidden Input Field for Task Tracking -->
+                <input type="hidden" id="task-ref" name="task_ref" value="TASK-02-MERN-2026">
+            </fieldset>
+            <br>
+
+            <!-- --------------------------------------------------------------- -->
+            <!-- SECTION 2: TECHNICAL BACKGROUND & SKILLS ASSESSMENT             -->
+            <!-- --------------------------------------------------------------- -->
+            <fieldset id="sec-technical">
+                <legend><strong>Section 2: Technical Background &amp; Skill Competencies</strong></legend>
+
+                <p>
+                    <label for="current-designation">Current Professional Designation (Readonly):</label><br>
+                    <input type="text" id="current-designation" name="current_designation" value="Backend Developer (Learning Track)" readonly size="45">
+                </p>
+
+                <p>
+                    <label for="backend-exp-years">Years of Experience in Java &amp; Spring Boot Backend: *</label><br>
+                    <input type="number" id="backend-exp-years" name="backend_exp_years" min="0" max="20" value="1" step="1" required>
+                </p>
+
+                <p><strong>Select Technologies You Have Practical Experience With:</strong></p>
+                <p>
+                    <input type="checkbox" id="sk-java" name="tech_skills" value="java" checked>
+                    <label for="sk-java">Core Java (SE/EE)</label>
+                    &nbsp;&nbsp;
+                    <input type="checkbox" id="sk-spring" name="tech_skills" value="spring_boot" checked>
+                    <label for="sk-spring">Spring Boot &amp; Spring Data JPA</label>
+                    &nbsp;&nbsp;
+                    <input type="checkbox" id="sk-mysql" name="tech_skills" value="mysql" checked>
+                    <label for="sk-mysql">MySQL &amp; Relational Databases</label>
+                    <br>
+                    <input type="checkbox" id="sk-rest" name="tech_skills" value="rest_api" checked>
+                    <label for="sk-rest">RESTful Microservices APIs</label>
+                    &nbsp;&nbsp;
+                    <input type="checkbox" id="sk-html" name="tech_skills" value="html5" checked>
+                    <label for="sk-html">HTML5 &amp; Semantic Web (Day 1-2)</label>
+                    &nbsp;&nbsp;
+                    <input type="checkbox" id="sk-css" name="tech_skills" value="css3">
+                    <label for="sk-css">CSS3 &amp; Flexbox / Grid</label>
+                    <br>
+                    <input type="checkbox" id="sk-js" name="tech_skills" value="javascript">
+                    <label for="sk-js">JavaScript ES6+ &amp; DOM Manipulation</label>
+                    &nbsp;&nbsp;
+                    <input type="checkbox" id="sk-react" name="tech_skills" value="reactjs">
+                    <label for="sk-react">React.js &amp; MERN Stack</label>
+                </p>
+
+                <p>
+                    <label for="backend-proficiency">Self-Assessed Backend Proficiency (Range Slider 0-100%):</label><br>
+                    <input type="range" id="backend-proficiency" name="backend_proficiency" min="0" max="100" value="85" step="5">
+                    <span><strong>Current Rating: 85%</strong></span>
+                </p>
+
+                <p>
+                    <label for="favorite-ide">Preferred Primary Code Editor (Autocomplete Datalist):</label><br>
+                    <input type="text" id="favorite-ide" name="favorite_ide" list="ide-options" placeholder="Start typing e.g. VS Code..." size="35">
+                    
+                    <!-- Datalist Autocomplete Suggestions -->
+                    <datalist id="ide-options">
+                        <option value="Visual Studio Code (VS Code)">
+                        <option value="IntelliJ IDEA Ultimate">
+                        <option value="Eclipse IDE">
+                        <option value="Sublime Text 4">
+                        <option value="WebStorm">
+                    </datalist>
+                </p>
+            </fieldset>
+            <br>
+
+            <!-- --------------------------------------------------------------- -->
+            <!-- SECTION 3: PROGRAM PREFERENCES & ROADMAP                        -->
+            <!-- --------------------------------------------------------------- -->
+            <fieldset id="sec-program">
+                <legend><strong>Section 3: MERN Program Preferences &amp; Daily Commitment</strong></legend>
+
+                <p><strong>Primary Specialized Learning Track Choice (Radio Buttons): *</strong></p>
+                <p>
+                    <input type="radio" id="track-choice-mern" name="track_choice" value="mern" checked>
+                    <label for="track-choice-mern"><strong>MERN Full-Stack Track</strong> (MongoDB, Express.js, React.js, Node.js + Gemini AI)</label>
+                    <br>
+                    <input type="radio" id="track-choice-java" name="track_choice" value="java_microservices">
+                    <label for="track-choice-java"><strong>Java Spring Boot Microservices Track</strong> (Spring Cloud, Kafka, Docker)</label>
+                </p>
+
+                <p>
+                    <label for="daily-hours">Dedicated Daily Learning Commitment Hours (Min 2, Max 10): *</label><br>
+                    <input type="number" id="daily-hours" name="daily_hours" min="2" max="10" value="4" required>
+                </p>
+
+                <p>
+                    <label for="standup-time">Preferred Daily Mentor Standup Time (Time Picker):</label><br>
+                    <input type="time" id="standup-time" name="standup_time" value="11:00">
+                </p>
+
+                <p>
+                    <label for="github-repo-url">Public Target GitHub Repository URL (type="url"): *</label><br>
+                    <input type="url" id="github-repo-url" name="github_repo_url" value="https://github.com/KalyaniV22/learning-html-css-javascript" required size="55">
+                </p>
+            </fieldset>
+            <br>
+
+            <!-- --------------------------------------------------------------- -->
+            <!-- SECTION 4: DOCUMENT UPLOADS & MEDIA PREVIEW                     -->
+            <!-- --------------------------------------------------------------- -->
+            <fieldset id="sec-media">
+                <legend><strong>Section 4: Document Uploads &amp; Orientation Media</strong></legend>
+
+                <p>
+                    <label for="resume-doc">Upload Updated Resume / CV (PDF or DOCX): *</label><br>
+                    <input type="file" id="resume-doc" name="resume_doc" accept=".pdf,.docx,.doc" required>
+                    <br><small>Allowed formats: <code>.pdf, .docx</code> (Max 5MB)</small>
+                </p>
+
+                <p>
+                    <label for="avatar-color">Preferred Dashboard Theme Accent Color (Color Picker):</label><br>
+                    <input type="color" id="avatar-color" name="avatar_color" value="#38bdf8">
+                </p>
+
+                <!-- Program Video Orientation Preview Component -->
+                <h3>Program Video Orientation Briefing:</h3>
+                <figure>
+                    <video width="560" height="315" controls poster="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='560' height='315' viewBox='0 0 560 315'><rect width='560' height='315' fill='%231e293b'/><polygon points='250,120 340,157 250,195' fill='%2338bdf8'/><text x='280' y='250' font-size='20' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>AD TECH Program Welcome Orientation Video</text></svg>">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                        <p>Your browser does not support HTML5 video elements.</p>
+                    </video>
+                    <figcaption><strong>Media Clip 1:</strong> AD TECH TASK-02 Orientation Overview.</figcaption>
+                </figure>
+
+                <!-- Program Audio Instructions Preview -->
+                <h3>Program Audio Instructions:</h3>
+                <figure>
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                        <p>Your browser does not support HTML5 audio elements.</p>
+                    </audio>
+                    <figcaption><strong>Audio Clip 1:</strong> Welcome Message from AD TECH HR Team.</figcaption>
+                </figure>
+            </fieldset>
+            <br>
+
+            <!-- --------------------------------------------------------------- -->
+            <!-- SECTION 5: ASSESSMENT METRICS & GUIDELINES                      -->
+            <!-- --------------------------------------------------------------- -->
+            <fieldset id="sec-progress">
+                <legend><strong>Section 5: Assessment Metrics &amp; Guidelines</strong></legend>
+
+                <h3>Current Progress &amp; Assessment Indicators:</h3>
+
+                <p>
+                    <label for="prog-bar">Overall 12-Day Program Completion Progress (Day 02 / 12):</label><br>
+                    <!-- HTML5 Progress Bar -->
+                    <progress id="prog-bar" value="2" max="12">16.6%</progress>
+                    <span><strong>16.6% (2 Days Completed)</strong></span>
+                </p>
+
+                <p>
+                    <label for="qual-meter">Java &amp; Backend Readiness Benchmark Score:</label><br>
+                    <!-- HTML5 Meter Element -->
+                    <meter id="qual-meter" value="88" min="0" max="100" low="50" high="75" optimum="90">88%</meter>
+                    <span><strong>88 / 100 (Exceeds Threshold)</strong></span>
+                </p>
+
+                <!-- Collapsible FAQ Guidelines Accordion (<details> & <summary>) -->
+                <h3>Program Submission FAQ Guidelines:</h3>
+
+                <details open>
+                    <summary><strong>Daily GitHub Commit Protocol Rule</strong></summary>
+                    <p>
+                        Every day's practice files, notes, and mini-projects must be committed to GitHub with clear, 
+                        meaningful commit messages (e.g., <code>Day 1 - Learned HTML Basics</code>, <code>Day 2 - Completed HTML Forms</code>). 
+                        Uploading all work on the final day is strictly prohibited.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><strong>Capstone AI Chatbot Requirements</strong></summary>
+                    <p>
+                        After completing HTML, CSS, and JS modules, you will build an AI Chatbot using Gemini API, 
+                        featuring chat bubbles, typing animation, auto-scroll, and live Vercel deployment.
+                    </p>
+                </details>
+            </fieldset>
+            <br>
+
+            <!-- --------------------------------------------------------------- -->
+            <!-- SECTION 6: CODE INTEGRITY DECLARATION                           -->
+            <!-- --------------------------------------------------------------- -->
+            <fieldset id="sec-declaration">
+                <legend><strong>Section 6: Code Integrity &amp; Terms Agreement</strong></legend>
+
+                <p>
+                    <input type="checkbox" id="terms-agree" name="terms_agree" value="accepted" required>
+                    <label for="terms-agree">
+                        <strong>I agree to all AD TECH Developer Learning Program rules and daily commit protocols. *</strong>
+                    </label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="code-integrity" name="code_integrity" value="declared" required>
+                    <label for="code-integrity">
+                        I confirm that all code exercises submitted to GitHub represent my genuine practice work. *
+                    </label>
+                </p>
+            </fieldset>
+            <br>
+
+            <!-- FORM SUBMISSION BUTTONS -->
+            <p>
+                <button type="submit">Submit Official Registration 🚀</button>
+                &nbsp;&nbsp;
+                <button type="reset">Reset Form Data 🔄</button>
+            </p>
+
+        </form>
+
+    </main>
+
+    <!-- ======================================================================= -->
+    <!-- 3. PAGE FOOTER                                                          -->
+    <!-- ======================================================================= -->
+    <hr>
+    <footer>
+        <p><strong>AD TECH Enterprises Pvt. Ltd.</strong> | Building Future Tech Talent</p>
+        <p>
+            HR Email: <a href="mailto:hradtechenterpriseschepvtltd@gmail.com">hradtechenterpriseschepvtltd@gmail.com</a> | 
+            Phone: <a href="tel:+918319358568">+91 83193 58568</a>
+        </p>
+        <p><small>&copy; 2026 AD TECH Enterprises Pvt. Ltd. Day 02 Mini Project Submission.</small></p>
+        <p><a href="#top">⬆️ Back to Top of Portal</a></p>
+    </footer>
+
+</body>
+</html>

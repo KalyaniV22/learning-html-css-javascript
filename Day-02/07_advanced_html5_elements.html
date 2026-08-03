@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 02 - Exercise 07: Advanced HTML5 Interactive Elements
+Developer: Kalyani Velukar
+================================================================================
+Learning Objectives:
+1. Implement native collapsible accordion widgets using <details> and <summary>.
+2. Display task completion status using the <progress> bar.
+3. Display scalar measurements and resource metrics using the <meter> element.
+4. Practice native popup modal windows using the <dialog> tag.
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 02 - Advanced HTML5 Elements Practice</title>
+</head>
+<body>
+
+    <h1>Day 02: Advanced HTML5 Interactive Elements</h1>
+    <p>Modern HTML5 includes native interactive components that previously required complex JavaScript.</p>
+    <hr>
+
+    <!-- SECTION 1: COLLAPSIBLE DETAILS AND SUMMARY -->
+    <h2>1. Native Collapsible Accordion (&lt;details&gt; &amp; &lt;summary&gt;)</h2>
+    <p>Click on the summary headers below to expand or collapse hidden content without writing any JavaScript!</p>
+
+    <!-- Accordion Item 1 (Default Closed) -->
+    <details>
+        <summary><strong>FAQ 1: What is the primary stack taught in TASK-02?</strong></summary>
+        <p>
+            The program focuses on mastering <strong>MERN (MongoDB, Express.js, React.js, and Node.js)</strong> 
+            alongside foundational HTML5, CSS3, and JavaScript ES6+.
+        </p>
+    </details>
+
+    <!-- Accordion Item 2 (Default Open via open attribute) -->
+    <details open>
+        <summary><strong>FAQ 2: What is the deadline for TASK-02 submission?</strong></summary>
+        <p>
+            The final submission deadline is <strong>Wednesday, 12 August 2026 at 7:00 PM IST</strong>. 
+            Daily progress must be tracked publicly on GitHub.
+        </p>
+    </details>
+
+    <!-- Accordion Item 3 -->
+    <details>
+        <summary><strong>FAQ 3: What is the capstone project requirement?</strong></summary>
+        <p>
+            You will build a full-featured <strong>AI Chatbot Website</strong> using Gemini API, 
+            HTML, CSS, and JavaScript, and deploy it live on <strong>Vercel</strong>.
+        </p>
+    </details>
+    <hr>
+
+    <!-- SECTION 2: PROGRESS BARS AND METERS -->
+    <h2>2. Status Progress Bar (&lt;progress&gt;) &amp; Scalar Meter (&lt;meter&gt;)</h2>
+
+    <h3>A. Task Progress Bar (&lt;progress&gt;)</h3>
+    <p>Displays task completion progress (e.g., Day 2 of 12 completed):</p>
+    <p>
+        <label for="learning-progress">MERN Foundation Completion (Day 02 / 12):</label><br>
+        <progress id="learning-progress" value="2" max="12">16.6%</progress>
+        <span><strong>16.6% Completed</strong></span>
+    </p>
+
+    <h3>B. Measurement Scalar Meter (&lt;meter&gt;)</h3>
+    <p>Displays scalar metrics with low, high, and optimum boundaries (e.g., quiz score, disk storage):</p>
+    
+    <p>
+        <label for="java-test-score">Java Assessment Score (85 / 100):</label><br>
+        <meter id="java-test-score" value="85" min="0" max="100" low="40" high="75" optimum="90">85%</meter>
+        <span><strong>85 / 100 (Pass)</strong></span>
+    </p>
+
+    <p>
+        <label for="storage-meter">System Disk Storage Usage (65 GB / 100 GB):</label><br>
+        <meter id="storage-meter" value="65" min="0" max="100" low="30" high="80" optimum="20">65 GB</meter>
+        <span><strong>65 GB Used</strong></span>
+    </p>
+    <hr>
+
+    <!-- SECTION 3: NATIVE DIALOG MODAL -->
+    <h2>3. Native Dialog Window (&lt;dialog&gt;)</h2>
+    <p>The <code>&lt;dialog&gt;</code> element represents a popup dialog modal box.</p>
+
+    <!-- Dialog modal box (open attribute makes it visible natively) -->
+    <dialog open>
+        <h3>Notification: Day 02 HTML Forms Completed!</h3>
+        <p>You have successfully completed all core exercises for Day 02 in the AD TECH Learning Track.</p>
+    </dialog>
+
+    <hr>
+    <p><small>Exercise 07 completed by Kalyani Velukar | AD TECH MERN Program</small></p>
+
+</body>
+</html>

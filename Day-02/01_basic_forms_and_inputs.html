@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 02 - Exercise 01: Basic HTML Forms & Inputs
+Developer: Kalyani Velukar
+================================================================================
+Learning Objectives:
+1. Understand the <form> container tag, action, and method attributes.
+2. Master explicit label association using <label for="id">.
+3. Practice essential input types: text, password, email, number, and textarea.
+4. Implement form submission (<button type="submit">) and reset (<button type="reset">).
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 02 - Basic HTML Forms Practice</title>
+</head>
+<body>
+
+    <h1>Day 02: Introduction to HTML Forms</h1>
+    <p>Forms allow web users to input data and send it to server endpoints for processing.</p>
+    <hr>
+
+    <!-- SECTION 1: SIMPLE USER LOGIN FORM -->
+    <h2>1. Basic User Login Form</h2>
+    <p>
+        Demonstrates <code>&lt;form&gt;</code> with <code>method="POST"</code>, 
+        explicit <code>&lt;label&gt;</code> associations, text, and password inputs.
+    </p>
+
+    <!-- 
+        action="#" submits data to the current page URL.
+        method="POST" sends form payload securely inside HTTP request body.
+    -->
+    <form action="#" method="post">
+        
+        <p>
+            <!-- for="username" links label to input with id="username" -->
+            <label for="username">Username or Handle: *</label><br>
+            <input type="text" id="username" name="username" placeholder="e.g., kalyanivelukar" required size="30">
+        </p>
+
+        <p>
+            <label for="user-password">Password: *</label><br>
+            <input type="password" id="user-password" name="password" placeholder="Enter secure password" required size="30">
+        </p>
+
+        <p>
+            <!-- Submit button triggers form submission -->
+            <button type="submit">Login to Portal 🔑</button>
+            &nbsp;
+            <!-- Reset button clears all entered form fields -->
+            <button type="reset">Clear Form 🔄</button>
+        </p>
+    </form>
+    <hr>
+
+    <!-- SECTION 2: DEVELOPER INQUIRY FORM -->
+    <h2>2. Developer Inquiry Form</h2>
+    <p>
+        Demonstrates email inputs, numeric inputs with min/max, and multi-line textareas.
+    </p>
+
+    <form action="#" method="post">
+        
+        <p>
+            <label for="dev-name">Full Name: *</label><br>
+            <input type="text" id="dev-name" name="dev_name" placeholder="Kalyani Velukar" required size="40">
+        </p>
+
+        <p>
+            <label for="dev-email">Corporate Email Address: *</label><br>
+            <!-- type="email" provides automatic client-side email format validation -->
+            <input type="email" id="dev-email" name="dev_email" placeholder="kalyani@adtech.com" required size="40">
+        </p>
+
+        <p>
+            <label for="dev-exp">Years of Experience in Java / Spring Boot:</label><br>
+            <!-- type="number" with min and max constraints -->
+            <input type="number" id="dev-exp" name="dev_exp" min="0" max="30" value="1" step="1">
+        </p>
+
+        <p>
+            <label for="dev-bio">Professional Bio &amp; Learning Goals: *</label><br>
+            <!-- <textarea> defines a multi-line text input field -->
+            <textarea id="dev-bio" name="dev_bio" rows="5" cols="50" placeholder="Describe your background and goals for the MERN learning program..." required></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Submit Inquiry ✉️</button>
+        </p>
+
+    </form>
+
+    <hr>
+    <p><small>Exercise 01 completed by Kalyani Velukar | AD TECH MERN Program</small></p>
+
+</body>
+</html>

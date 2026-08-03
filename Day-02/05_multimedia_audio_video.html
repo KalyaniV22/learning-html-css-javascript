@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 02 - Exercise 05: Native HTML5 Multimedia (<audio>, <video>)
+Developer: Kalyani Velukar
+================================================================================
+Learning Objectives:
+1. Embed native HTML5 video players using <video> with controls, width/height, poster, and preload attributes.
+2. Embed native HTML5 audio players using <audio> with controls.
+3. Understand multiple source elements (<source src="..." type="...">) for cross-browser fallback support.
+4. Add text tracks (<track kind="subtitles">) for accessibility.
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 02 - HTML5 Multimedia Practice</title>
+</head>
+<body>
+
+    <h1>Day 02: Native HTML5 Multimedia (&lt;video&gt; &amp; &lt;audio&gt;)</h1>
+    <p>HTML5 allows playing audio and video directly in web browsers without plugins.</p>
+    <hr>
+
+    <!-- SECTION 1: NATIVE VIDEO PLAYER -->
+    <h2>1. Native HTML5 Video Player (&lt;video&gt;)</h2>
+    <p>
+        The <code>&lt;video&gt;</code> tag supports attributes like <code>controls</code> (show play/pause UI), 
+        <code>poster</code> (cover thumbnail image), <code>preload="metadata"</code>, and width/height.
+    </p>
+
+    <!-- Native Video Player Component -->
+    <figure>
+        <video width="640" height="360" controls poster="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'><rect width='640' height='360' fill='%230f172a'/><polygon points='280,140 380,180 280,220' fill='%2338bdf8'/><text x='320' y='280' font-size='22' font-family='sans-serif' font-weight='bold' fill='%23f8fafc' text-anchor='middle'>AD TECH Developer Orientation Video</text></svg>" preload="metadata">
+            <!-- MP4 format source (primary cross-browser standard) -->
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            
+            <!-- Ogg format source (secondary browser fallback) -->
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            
+            <!-- Accessibility Subtitles / Track -->
+            <track kind="subtitles" src="subtitles_en.vtt" srclang="en" label="English Subtitles">
+
+            <!-- Fallback text displayed if browser does not support HTML5 video -->
+            <p>Your browser does not support native HTML5 video playback. Please upgrade your browser.</p>
+        </video>
+        <figcaption>
+            <strong>Figure 1:</strong> AD TECH Developer Orientation Video (HTML5 Native Video Control).
+        </figcaption>
+    </figure>
+    <hr>
+
+    <!-- SECTION 2: NATIVE AUDIO PLAYER -->
+    <h2>2. Native HTML5 Audio Player (&lt;audio&gt;)</h2>
+    <p>The <code>&lt;audio&gt;</code> tag provides a compact, accessible media player for sound clips and podcasts.</p>
+
+    <figure>
+        <audio controls preload="none">
+            <!-- MP3 Audio format source -->
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            
+            <!-- Ogg Audio format source fallback -->
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+
+            <!-- Fallback text -->
+            <p>Your browser does not support native HTML5 audio playback.</p>
+        </audio>
+        <figcaption>
+            <strong>Audio Sample 1:</strong> Background Orientation Audio Instructions.
+        </figcaption>
+    </figure>
+    <hr>
+
+    <!-- SECTION 3: MULTIMEDIA ATTRIBUTES SUMMARY TABLE -->
+    <h2>3. HTML5 Multimedia Attributes Summary</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Elements</th>
+                <th>Description / Function</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>controls</code></td>
+                <td><code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code></td>
+                <td>Displays default play, pause, volume, and timeline controls.</td>
+            </tr>
+            <tr>
+                <td><code>poster</code></td>
+                <td><code>&lt;video&gt;</code></td>
+                <td>Specifies an image URL to be shown while the video is downloading or until played.</td>
+            </tr>
+            <tr>
+                <td><code>autoplay</code></td>
+                <td><code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code></td>
+                <td>Automatically starts media playback upon page load (often blocked unless muted).</td>
+            </tr>
+            <tr>
+                <td><code>muted</code></td>
+                <td><code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code></td>
+                <td>Sets default audio volume output to zero (silent).</td>
+            </tr>
+            <tr>
+                <td><code>loop</code></td>
+                <td><code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code></td>
+                <td>Replays the media file automatically every time it finishes.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <p><small>Exercise 05 completed by Kalyani Velukar | AD TECH MERN Program</small></p>
+
+</body>
+</html>

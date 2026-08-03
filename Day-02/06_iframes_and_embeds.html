@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 02 - Exercise 06: Embedding Content with Iframes (<iframe>)
+Developer: Kalyani Velukar
+================================================================================
+Learning Objectives:
+1. Understand how to embed external HTML documents using <iframe>.
+2. Master iframe attributes: src, srcdoc, width, height, title, loading="lazy".
+3. Apply security sandboxing using sandbox="allow-scripts allow-same-origin".
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 02 - Iframes &amp; Web Embeds Practice</title>
+</head>
+<body>
+
+    <h1>Day 02: Embedding Web Documents with Iframes (&lt;iframe&gt;)</h1>
+    <p>An inline frame (iframe) embeds an external HTML web page directly inside your current page canvas.</p>
+    <hr>
+
+    <!-- SECTION 1: BASIC IFRAME EMBED -->
+    <h2>1. Basic Inline Frame (External Web Document)</h2>
+    <p>
+        Always include a descriptive <code>title</code> attribute on every iframe for screen reader accessibility!
+    </p>
+
+    <!-- Basic Iframe Component -->
+    <iframe src="https://en.wikipedia.org/wiki/HTML" width="100%" height="300" title="Wikipedia HTML Article Page" loading="lazy">
+        <p>Your browser does not support inline frames.</p>
+    </iframe>
+    <hr>
+
+    <!-- SECTION 2: INLINE SRCDOC IFRAME -->
+    <h2>2. Inline HTML Content Frame (&lt;iframe srcdoc="..."&gt;)</h2>
+    <p>
+        The <code>srcdoc</code> attribute allows rendering inline HTML markup directly inside an isolated iframe box.
+    </p>
+
+    <iframe srcdoc="<h3 style='color:%2338bdf8;font-family:sans-serif;'>Embedded Isolated HTML Widget</h3><p style='font-family:sans-serif;'>This text is rendered safely inside an isolated srcdoc frame.</p>" width="100%" height="150" title="Inline Srcdoc Demo Widget">
+    </iframe>
+    <hr>
+
+    <!-- SECTION 3: SANDBOXED SECURE IFRAME -->
+    <h2>3. Security Sandboxing (&lt;iframe sandbox="..."&gt;)</h2>
+    <p>
+        The <code>sandbox</code> attribute applies strict security restrictions to embedded content 
+        (e.g., blocking scripts, forms, or top-level navigation).
+    </p>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Sandbox Value</th>
+                <th>Security Restriction Lifted / Allowed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>sandbox=""</code></td>
+                <td>Applies MAXIMUM security (blocks scripts, forms, popups, and same-origin cookies).</td>
+            </tr>
+            <tr>
+                <td><code>sandbox="allow-scripts"</code></td>
+                <td>Allows executing client JavaScript inside the iframe.</td>
+            </tr>
+            <tr>
+                <td><code>sandbox="allow-forms"</code></td>
+                <td>Allows submitting forms from within the iframe.</td>
+            </tr>
+            <tr>
+                <td><code>sandbox="allow-same-origin"</code></td>
+                <td>Allows content to retain its original domain origin context.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <p><small>Exercise 06 completed by Kalyani Velukar | AD TECH MERN Program</small></p>
+
+</body>
+</html>

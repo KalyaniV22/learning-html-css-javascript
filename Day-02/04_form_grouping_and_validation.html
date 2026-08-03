@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 02 - Exercise 04: Form Grouping (<fieldset>, <legend>) & Validation
+Developer: Kalyani Velukar
+================================================================================
+Learning Objectives:
+1. Master semantic form grouping using <fieldset> and <legend>.
+2. Implement client-side validation attributes: required, minlength, maxlength, min, max.
+3. Understand Regular Expression (Regex) pattern validation using pattern="...".
+4. Practice writing accessible, error-resistant web forms.
+================================================================================
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 02 - Form Grouping &amp; Validation Practice</title>
+</head>
+<body>
+
+    <h1>Day 02: Form Grouping (&lt;fieldset&gt;) &amp; HTML5 Validation</h1>
+    <p>Organizing complex forms into logical fieldsets improves visual structure and user experience.</p>
+    <hr>
+
+    <form action="#" method="post">
+
+        <!-- FIELDSET 1: PERSONAL & CONTACT INFORMATION -->
+        <fieldset>
+            <legend><strong>1. Personal &amp; Contact Details</strong></legend>
+
+            <p>
+                <label for="first-name">First Name: *</label><br>
+                <input type="text" id="first-name" name="first_name" placeholder="Kalyani" required minlength="2" maxlength="30">
+            </p>
+
+            <p>
+                <label for="last-name">Last Name: *</label><br>
+                <input type="text" id="last-name" name="last_name" placeholder="Velukar" required minlength="2" maxlength="30">
+            </p>
+
+            <p>
+                <label for="official-email">Official AD TECH Email: *</label><br>
+                <input type="email" id="official-email" name="official_email" placeholder="kalyani@adtech.com" required>
+            </p>
+
+            <p>
+                <label for="emp-code">Employee Code (Format: AD-XXXXX): *</label><br>
+                <!-- Regex pattern requires AD- followed by exactly 5 digits -->
+                <input type="text" id="emp-code" name="emp_code" placeholder="AD-83193" pattern="AD-[0-9]{5}" title="Format must be 'AD-' followed by 5 digits (e.g., AD-83193)" required>
+                <br>
+                <small>Format: <code>AD-XXXXX</code> (e.g. AD-83193)</small>
+            </p>
+        </fieldset>
+        <br>
+
+        <!-- FIELDSET 2: TECHNICAL ASSESSMENT & PREFERENCES -->
+        <fieldset>
+            <legend><strong>2. Technical Profile &amp; Program Validation</strong></legend>
+
+            <p>
+                <label for="backend-score">Self-Rating in Java / Spring Boot (1 to 10): *</label><br>
+                <input type="number" id="backend-score" name="backend_score" min="1" max="10" value="8" required>
+            </p>
+
+            <p>
+                <label for="github-repo-link">Repository URL for Submission: *</label><br>
+                <input type="url" id="github-repo-link" name="github_repo_link" placeholder="https://github.com/KalyaniV22/learning-html-css-javascript" required size="50">
+            </p>
+
+            <p>
+                <label for="commitment-hours">Daily Dedicated Learning Hours (Min 2, Max 8): *</label><br>
+                <input type="number" id="commitment-hours" name="commitment_hours" min="2" max="8" value="4" required>
+            </p>
+        </fieldset>
+        <br>
+
+        <!-- FIELDSET 3: DECLARATION & AGREEMENT -->
+        <fieldset>
+            <legend><strong>3. Code Integrity Declaration</strong></legend>
+
+            <p>
+                <input type="checkbox" id="declare-integrity" name="declare_integrity" value="yes" required>
+                <label for="declare-integrity">
+                    I hereby declare that all submitted code exercises and projects are written by me as part of the AD TECH Learning Track. *
+                </label>
+            </p>
+        </fieldset>
+        <br>
+
+        <!-- SUBMIT & RESET BUTTONS -->
+        <p>
+            <button type="submit">Validate &amp; Submit Registration ✅</button>
+            &nbsp;
+            <button type="reset">Reset All Fields 🔄</button>
+        </p>
+
+    </form>
+
+    <hr>
+    <p><small>Exercise 04 completed by Kalyani Velukar | AD TECH MERN Program</small></p>
+
+</body>
+</html>
