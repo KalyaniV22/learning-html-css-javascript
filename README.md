@@ -23,7 +23,7 @@ The goal is to practice writing clean, semantic, and maintainable frontend code 
 | Day | Module / Topic | Status | Key Deliverables & Commit Message |
 | :--- | :--- | :---: | :--- |
 | **Day 01** | **HTML Basics & Document Structure** | 🟢 Completed | Practice files, Notes, HTML Portfolio Mini Project (`Day 1 - Learned HTML Basics`) |
-| **Day 02** | **HTML Forms & Advanced Elements** | ⚪ Pending | Form controls, input validation, multimedia (`Day 2 - Completed HTML Forms`) |
+| **Day 02** | **HTML Forms & Advanced Elements** | 🟢 Completed | Form controls, input validation, multimedia (`Day 2 - Completed HTML Forms`) |
 | **Day 03** | **CSS Flexbox & Layout Systems** | ⚪ Pending | CSS Box Model, Flexbox layout exercises (`Day 3 - CSS Flexbox Practice`) |
 | **Day 04** | **CSS Grid, Positioning & Mini Projects** | ⚪ Pending | CSS Grid, Positioning, Responsive Mini Projects (`Day 4 - CSS Mini Project`) |
 | **Day 05** | **JavaScript Fundamentals & Logic** | ⚪ Pending | Variables, Data Types, Control Loops, Functions (`Day 5 - JavaScript Variables & Loops`) |
