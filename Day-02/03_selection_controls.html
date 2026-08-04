@@ -1,17 +1,4 @@
 <!DOCTYPE html>
-<!--
-================================================================================
-AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
-Day 02 - Exercise 03: Selection Controls (Radio, Checkbox, Select & Datalist)
-Developer: Kalyani Velukar
-================================================================================
-Learning Objectives:
-1. Understand Radio buttons (type="radio") for single-choice choices within a shared name group.
-2. Understand Checkboxes (type="checkbox") for multiple independent selections.
-3. Master dropdown menus (<select>, <option>, <optgroup>, multiple).
-4. Implement HTML5 autocomplete suggestions using <datalist>.
-================================================================================
--->
 
 <html lang="en">
 <head>
@@ -27,7 +14,6 @@ Learning Objectives:
 
     <form action="#" method="post">
 
-        <!-- SECTION 1: RADIO BUTTONS (SINGLE SELECTION) -->
         <h2>1. Radio Buttons (Select EXACTLY One Choice)</h2>
         <p>
             <em>Rule:</em> All radio inputs in the same logical choice group <strong>MUST share the exact same <code>name</code> attribute</strong>!
@@ -46,7 +32,6 @@ Learning Objectives:
         </p>
         <hr>
 
-        <!-- SECTION 2: CHECKBOXES (MULTIPLE SELECTIONS) -->
         <h2>2. Checkboxes (Select Any Number of Choices)</h2>
         <p>Checkboxes operate independently, allowing users to check zero, one, or multiple boxes.</p>
 
@@ -69,7 +54,6 @@ Learning Objectives:
         </p>
         <hr>
 
-        <!-- SECTION 3: DROPDOWN LISTS (<select>, <optgroup>) -->
         <h2>3. Dropdown Select Menus (&lt;select&gt;, &lt;option&gt;, &lt;optgroup&gt;)</h2>
 
         <p>
@@ -77,7 +61,6 @@ Learning Objectives:
             <select id="current-city" name="current_city" required>
                 <option value="">-- Choose City --</option>
 
-                <!-- Grouping options under category labels with <optgroup> -->
                 <optgroup label="India (Primary Tech Hubs)">
                     <option value="bhopal">Bhopal</option>
                     <option value="indore">Indore</option>
@@ -107,7 +90,6 @@ Learning Objectives:
         </p>
         <hr>
 
-        <!-- SECTION 4: DATALIST AUTOCOMPLETE -->
         <h2>4. HTML5 Autocomplete Datalist (&lt;datalist&gt;)</h2>
         <p>Combines text input typing with dropdown suggestion list for faster data entry.</p>
 
@@ -116,7 +98,6 @@ Learning Objectives:
             <!-- input list attribute connects to datalist id -->
             <input type="text" id="ide-choice" name="ide_choice" list="ide-list" placeholder="Start typing e.g. VS Code...">
 
-            <!-- <datalist> holds pre-defined auto-suggestions -->
             <datalist id="ide-list">
                 <option value="Visual Studio Code (VS Code)">
                 <option value="IntelliJ IDEA Ultimate">
