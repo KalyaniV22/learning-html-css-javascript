@@ -1,17 +1,4 @@
 <!DOCTYPE html>
-<!--
-================================================================================
-AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
-Day 02 - Exercise 01: Basic HTML Forms & Inputs
-Developer: Kalyani Velukar
-================================================================================
-Learning Objectives:
-1. Understand the <form> container tag, action, and method attributes.
-2. Master explicit label association using <label for="id">.
-3. Practice essential input types: text, password, email, number, and textarea.
-4. Implement form submission (<button type="submit">) and reset (<button type="reset">).
-================================================================================
--->
 
 <html lang="en">
 <head>
@@ -25,17 +12,12 @@ Learning Objectives:
     <p>Forms allow web users to input data and send it to server endpoints for processing.</p>
     <hr>
 
-    <!-- SECTION 1: SIMPLE USER LOGIN FORM -->
     <h2>1. Basic User Login Form</h2>
     <p>
         Demonstrates <code>&lt;form&gt;</code> with <code>method="POST"</code>, 
         explicit <code>&lt;label&gt;</code> associations, text, and password inputs.
     </p>
 
-    <!-- 
-        action="#" submits data to the current page URL.
-        method="POST" sends form payload securely inside HTTP request body.
-    -->
     <form action="#" method="post">
         
         <p>
@@ -50,16 +32,13 @@ Learning Objectives:
         </p>
 
         <p>
-            <!-- Submit button triggers form submission -->
             <button type="submit">Login to Portal 🔑</button>
             &nbsp;
-            <!-- Reset button clears all entered form fields -->
             <button type="reset">Clear Form 🔄</button>
         </p>
     </form>
     <hr>
 
-    <!-- SECTION 2: DEVELOPER INQUIRY FORM -->
     <h2>2. Developer Inquiry Form</h2>
     <p>
         Demonstrates email inputs, numeric inputs with min/max, and multi-line textareas.
