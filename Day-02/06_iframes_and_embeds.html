@@ -1,16 +1,4 @@
 <!DOCTYPE html>
-<!--
-================================================================================
-AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
-Day 02 - Exercise 06: Embedding Content with Iframes (<iframe>)
-Developer: Kalyani Velukar
-================================================================================
-Learning Objectives:
-1. Understand how to embed external HTML documents using <iframe>.
-2. Master iframe attributes: src, srcdoc, width, height, title, loading="lazy".
-3. Apply security sandboxing using sandbox="allow-scripts allow-same-origin".
-================================================================================
--->
 
 <html lang="en">
 <head>
@@ -24,19 +12,16 @@ Learning Objectives:
     <p>An inline frame (iframe) embeds an external HTML web page directly inside your current page canvas.</p>
     <hr>
 
-    <!-- SECTION 1: BASIC IFRAME EMBED -->
     <h2>1. Basic Inline Frame (External Web Document)</h2>
     <p>
         Always include a descriptive <code>title</code> attribute on every iframe for screen reader accessibility!
     </p>
 
-    <!-- Basic Iframe Component -->
     <iframe src="https://en.wikipedia.org/wiki/HTML" width="100%" height="300" title="Wikipedia HTML Article Page" loading="lazy">
         <p>Your browser does not support inline frames.</p>
     </iframe>
     <hr>
 
-    <!-- SECTION 2: INLINE SRCDOC IFRAME -->
     <h2>2. Inline HTML Content Frame (&lt;iframe srcdoc="..."&gt;)</h2>
     <p>
         The <code>srcdoc</code> attribute allows rendering inline HTML markup directly inside an isolated iframe box.
@@ -46,7 +31,6 @@ Learning Objectives:
     </iframe>
     <hr>
 
-    <!-- SECTION 3: SANDBOXED SECURE IFRAME -->
     <h2>3. Security Sandboxing (&lt;iframe sandbox="..."&gt;)</h2>
     <p>
         The <code>sandbox</code> attribute applies strict security restrictions to embedded content 
