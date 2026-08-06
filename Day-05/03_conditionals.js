@@ -1,9 +1,7 @@
-/* Day 05 Exercise 03 - Conditionals Script */
 
 const userScore = 88;
 let grade = "";
 
-// 1. If...Else If...Else Branching
 if (userScore >= 90) {
     grade = "A+ (Outstanding)";
 } else if (userScore >= 80) {
@@ -14,7 +12,6 @@ if (userScore >= 90) {
     grade = "Needs Improvement";
 }
 
-// 2. Switch Statement
 const moduleDay = 5;
 let moduleTopic = "";
 
