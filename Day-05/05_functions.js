@@ -1,19 +1,15 @@
-/* Day 05 Exercise 05 - Functions Script */
 
 // 1. Function Declaration with Default Parameters
 function calculateTotalScore(baseScore = 50, bonus = 10) {
     return baseScore + bonus;
 }
 
-// 2. Arrow Function (ES6)
 const formatGreeting = (name, role) => `Hello ${name}, your current role is ${role}.`;
 
-// 3. Arrow Function with Rest Parameters (...skills)
 const summarizeSkills = (devName, ...skills) => {
     return `${devName} possesses skills in: ${skills.join(", ")}.`;
 };
 
-// Function Executions
 const totalScore = calculateTotalScore(80, 15); // 95
 const greetingMsg = formatGreeting("Kalyani Velukar", "Backend Developer");
 const skillSummary = summarizeSkills("Kalyani", "Java", "Spring Boot", "MySQL", "HTML5", "CSS3", "JavaScript");
