@@ -1,0 +1,50 @@
+/* Day 03 Exercise 06 - Flex Item Stylesheet */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.flex-parent {
+    display: flex;
+    gap: 15px;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 200px;
+}
+
+.item {
+    padding: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+}
+
+.item-1 {
+    background-color: #f43f5e;
+    flex: 0 0 150px; /* Fixed width of 150px */
+}
+
+.item-2 {
+    background-color: #38bdf8;
+    color: #0f172a;
+    flex-grow: 2; /* Expands to fill available space */
+}
+
+.item-3 {
+    background-color: #a855f7;
+    align-self: flex-end; /* Overrides container alignment */
+}

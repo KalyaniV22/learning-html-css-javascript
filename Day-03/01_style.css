@@ -1,0 +1,125 @@
+/*
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - Day 03 Exercise 01 Stylesheet
+================================================================================
+*/
+
+/* 1. CSS CUSTOM VARIABLES (:root) */
+:root {
+    --primary-color: #38bdf8;
+    --secondary-color: #a855f7;
+    --dark-bg: #0f172a;
+    --card-bg: #1e293b;
+    --text-light: #f8fafc;
+    --text-muted: #94a3b8;
+    --radius: 8px;
+}
+
+/* 2. UNIVERSAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* 3. ELEMENT SELECTORS */
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+/* 4. CLASS SELECTORS */
+.main-header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    font-style: italic;
+}
+
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card-section {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+    border: 1px solid #334155;
+}
+
+.highlight-text {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* 5. ID SELECTOR */
+#unique-banner {
+    background-color: #0369a1;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+}
+
+/* 6. BUTTONS & PSEUDO-CLASSES */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+}
+
+.btn-primary:hover {
+    background-color: #0284c7;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #9333ea;
+}
+
+/* 7. COLOR SYSTEMS DEMO BOXES */
+.color-box {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+}
+
+.hex-box { background-color: #38bdf8; color: #0f172a; }
+.rgb-box { background-color: rgb(59, 130, 246); }
+.hsl-box { background-color: hsl(217, 91%, 60%); }
+.var-box { background-color: var(--secondary-color); }

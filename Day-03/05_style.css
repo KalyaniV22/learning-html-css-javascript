@@ -1,0 +1,47 @@
+/* Day 03 Exercise 05 - Flexbox Container Stylesheet */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.demo-section {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.flex-container {
+    display: flex;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    min-height: 120px;
+}
+
+.flex-space-between {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center-all {
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+}
+
+.flex-item {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 15px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+}

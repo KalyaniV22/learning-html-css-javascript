@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 03 Mini Project: Flexbox Glassmorphism Personal Portfolio
+Developer: Kalyani Velukar (Backend Developer / MERN Trainee)
+================================================================================
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flexbox Glassmorphism Styled Portfolio - Kalyani Velukar">
+    <title>Kalyani Velukar | Flexbox Styled Portfolio</title>
+    <!-- Google Fonts & External CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio_style.css">
+</head>
+<body>
+
+    <!-- FLEXBOX STICKY NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand">Kalyani<span>.dev</span></div>
+        <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn-primary">Hire Me 🚀</a>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <main class="container">
+        
+        <!-- HERO SECTION -->
+        <section id="about" class="hero-card">
+            <div class="hero-content">
+                <span class="badge">AD TECH Learning Track - Day 03</span>
+                <h1>Hi, I'm Kalyani Velukar 👋</h1>
+                <h2>Backend Developer &amp; MERN Trainee</h2>
+                <p>
+                    Specializing in Java, Spring Boot, RESTful APIs, and MySQL. Currently building modern, 
+                    responsive full-stack web applications with HTML5, CSS3 Flexbox, and React.js.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="https://github.com/KalyaniV22" target="_blank" class="btn-secondary">GitHub Profile ➔</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS FLEX GRID -->
+        <section id="skills" class="section-block">
+            <h2 class="section-title">Technical Skill Matrix</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Backend Engineering</h3>
+                    <ul>
+                        <li>Java 17 &amp; Spring Boot</li>
+                        <li>Spring Data JPA</li>
+                        <li>RESTful API Architecture</li>
+                        <li>MySQL Database</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Frontend &amp; Styling (Day 3)</h3>
+                    <ul>
+                        <li>HTML5 &amp; Semantic Web</li>
+                        <li>CSS3 Box Model &amp; Flexbox</li>
+                        <li>Responsive Layout Patterns</li>
+                        <li>Glassmorphism &amp; Variables</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Developer Tools</h3>
+                    <ul>
+                        <li>Git &amp; GitHub Tracking</li>
+                        <li>Maven &amp; Postman</li>
+                        <li>VS Code &amp; IntelliJ</li>
+                        <li>Vercel Deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS FLEX GRID -->
+        <section id="projects" class="section-block">
+            <h2 class="section-title">Featured Learning Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-tag">Day 01</div>
+                    <h3>Semantic HTML Portfolio</h3>
+                    <p>Pure HTML multi-section resume page built without external frameworks.</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-tag">Day 02</div>
+                    <h3>Registration &amp; Assessment Portal</h3>
+                    <p>Complex form application with regex validation, datalists, and multimedia.</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-tag">Day 03</div>
+                    <h3>Flexbox Glassmorphism UI</h3>
+                    <p>Modern dark-themed portfolio styled with CSS variables and Flexbox alignment.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section-block contact-box">
+            <h2>Let's Connect</h2>
+            <p>Email: <a href="mailto:hradtechenterpriseschepvtltd@gmail.com">hradtechenterpriseschepvtltd@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/KalyaniV22" target="_blank">github.com/KalyaniV22</a></p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Kalyani Velukar | AD TECH Enterprises Pvt. Ltd.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 03 - Exercise 02: CSS Box Model & Sizing
+Developer: Kalyani Velukar
+================================================================================
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 03 - CSS Box Model</title>
+    <link rel="stylesheet" href="02_style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Day 03: Understanding the CSS Box Model</h1>
+        <p>Margin, Border, Padding, Content, and <code>box-sizing: border-box</code>.</p>
+    </header>
+
+    <main>
+        <!-- BOX MODEL ANATOMY CARD -->
+        <section class="box-demo content-box-example">
+            <h2>1. Default Box Model (content-box)</h2>
+            <p>Width = 300px + Padding (40px) + Border (10px) = <strong>350px total width!</strong></p>
+        </section>
+
+        <section class="box-demo border-box-example">
+            <h2>2. Standard Box Model (border-box)</h2>
+            <p>Width = 300px total (Padding and Border are included inside the 300px!).</p>
+        </section>
+    </main>
+
+</body>
+</html>

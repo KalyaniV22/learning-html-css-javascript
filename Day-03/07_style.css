@@ -1,0 +1,93 @@
+/* Day 03 Exercise 07 - Layout Patterns Stylesheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+/* FLEX NAVBAR */
+.flex-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1e293b;
+    border-bottom: 1px solid #334155;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.nav-cta {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FLEX CARD GRID */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 280px; /* Responsive flex items: shrink and grow above 280px */
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+}
+
+.card h3 {
+    color: #a855f7;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

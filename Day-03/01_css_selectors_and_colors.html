@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 03 - Exercise 01: CSS Selectors, Specificity & Colors
+Developer: Kalyani Velukar
+================================================================================
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 03 - CSS Selectors &amp; Colors</title>
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="01_style.css">
+</head>
+<body>
+
+    <header class="main-header" id="page-top">
+        <h1>Day 03: CSS Selectors &amp; Color Systems</h1>
+        <p class="subtitle">Mastering element, class, ID, pseudo-classes, and CSS variables.</p>
+    </header>
+
+    <main class="content-container">
+        <section class="card-section">
+            <h2>1. CSS Selectors Demonstration</h2>
+            <p>This paragraph is styled via element selector.</p>
+            <p class="highlight-text">This paragraph is styled via class selector (.highlight-text).</p>
+            <p id="unique-banner">This paragraph is styled via ID selector (#unique-banner).</p>
+            
+            <div class="button-group">
+                <button class="btn btn-primary">Primary Button (:hover)</button>
+                <button class="btn btn-secondary">Secondary Button</button>
+            </div>
+        </section>
+
+        <section class="card-section color-demo">
+            <h2>2. Color Systems in CSS</h2>
+            <div class="color-box hex-box">HEX Color (#38bdf8)</div>
+            <div class="color-box rgb-box">RGB Color (rgb(59, 130, 246))</div>
+            <div class="color-box hsl-box">HSL Color (hsl(217, 91%, 60%))</div>
+            <div class="color-box var-box">CSS Variable (var(--primary-color))</div>
+        </section>
+    </main>
+
+</body>
+</html>

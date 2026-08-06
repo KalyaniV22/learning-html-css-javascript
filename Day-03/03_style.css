@@ -1,0 +1,58 @@
+/* Day 03 Exercise 03 - Typography Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.typography-card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 650px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.main-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #38bdf8;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #a855f7;
+    margin-bottom: 20px;
+}
+
+.body-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.custom-uppercase {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.custom-monospace {
+    font-family: 'Fira Code', monospace;
+    background-color: #0f172a;
+    padding: 12px;
+    border-radius: 6px;
+    color: #f43f5e;
+    margin-top: 15px;
+}
