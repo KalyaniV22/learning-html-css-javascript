@@ -1,6 +1,4 @@
-/* Day 03 Exercise 07 - Layout Patterns Stylesheet */
-
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +10,6 @@ body {
     color: #f8fafc;
 }
 
-/* FLEX NAVBAR */
 .flex-navbar {
     display: flex;
     justify-content: space-between;
