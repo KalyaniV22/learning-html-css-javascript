@@ -1,5 +1,4 @@
 
-// 1. Function Declaration with Default Parameters
 function calculateTotalScore(baseScore = 50, bonus = 10) {
     return baseScore + bonus;
 }
