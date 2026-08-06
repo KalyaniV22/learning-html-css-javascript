@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+================================================================================
+AD TECH ENTERPRISES PVT. LTD. - MERN Foundation Learning Program
+Day 05 Mini Project: Interactive JavaScript & MERN Developer Knowledge Quiz App
+Developer: Kalyani Velukar (Backend Developer / MERN Trainee)
+================================================================================
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AD TECH Developer Knowledge Assessment Quiz - Test your HTML, CSS, and JavaScript knowledge.">
+    <title>AD TECH | Developer Knowledge Quiz App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz_style.css">
+</head>
+<body>
+
+    <!-- APP WRAPPER -->
+    <div class="app-container">
+
+        <!-- HEADER -->
+        <header class="quiz-header">
+            <div class="logo">AD TECH<span>.Quiz</span></div>
+            <div class="progress-info">
+                <span id="question-tracker">Question 1 / 8</span>
+                <span class="separator">|</span>
+                <span id="score-display">Score: 0</span>
+            </div>
+        </header>
+
+        <!-- SCREENS -->
+
+        <!-- START SCREEN -->
+        <section id="start-screen" class="screen active">
+            <div class="screen-card start-card">
+                <div class="quiz-icon">🚀</div>
+                <h1>Developer Knowledge Assessment</h1>
+                <p>Test your knowledge of HTML5, CSS3 &amp; JavaScript fundamentals — Day 1 to Day 5 topics.</p>
+                <div class="meta-badges">
+                    <span class="badge">📋 8 Questions</span>
+                    <span class="badge">⏱️ Timed</span>
+                    <span class="badge">🏆 Graded Result</span>
+                </div>
+                <div class="candidate-form">
+                    <label for="candidate-name">Enter Your Name:</label>
+                    <input type="text" id="candidate-name" placeholder="e.g. Kalyani Velukar" autocomplete="off">
+                </div>
+                <button id="start-btn" class="btn-primary">Start Assessment ➔</button>
+            </div>
+        </section>
+
+        <!-- QUIZ SCREEN -->
+        <section id="quiz-screen" class="screen">
+            <div class="screen-card quiz-card">
+                <!-- Progress Bar -->
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+
+                <!-- Timer -->
+                <div class="timer-row">
+                    <span class="timer-label">⏱️ Time Left:</span>
+                    <span id="timer-display" class="timer-value">20s</span>
+                </div>
+
+                <!-- Question -->
+                <div class="question-area">
+                    <p class="question-num" id="question-num">Q1 of 8</p>
+                    <h2 class="question-text" id="question-text"></h2>
+                </div>
+
+                <!-- Options Grid -->
+                <div class="options-grid" id="options-grid">
+                    <!-- Dynamically rendered by JS -->
+                </div>
+
+                <!-- Next Button -->
+                <button id="next-btn" class="btn-primary" style="display:none;">Next Question ➔</button>
+            </div>
+        </section>
+
+        <!-- RESULT SCREEN -->
+        <section id="result-screen" class="screen">
+            <div class="screen-card result-card">
+                <div class="result-icon" id="result-icon">🏆</div>
+                <h2 id="result-greeting">Outstanding, Kalyani!</h2>
+                <div class="score-ring">
+                    <span id="final-score-percent">0%</span>
+                </div>
+                <p id="result-summary">You scored 0 out of 8</p>
+                <p id="result-grade" class="grade-badge"></p>
+                <div class="result-breakdown" id="result-breakdown"></div>
+                <button id="restart-btn" class="btn-primary">Retake Assessment 🔄</button>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="quiz-footer">
+        <p>AD TECH Enterprises Pvt. Ltd. &copy; 2026 | Day 05 Mini Project by Kalyani Velukar</p>
+    </footer>
+
+    <script src="quiz_app.js"></script>
+</body>
+</html>
