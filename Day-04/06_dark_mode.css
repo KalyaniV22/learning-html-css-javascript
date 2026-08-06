@@ -1,0 +1,42 @@
+/* Day 04 Exercise 06 - Dark Mode Tokens Stylesheet */
+
+:root {
+    --color-bg: #0f172a;
+    --color-card: #1e293b;
+    --color-primary: #38bdf8;
+    --color-text: #f8fafc;
+    --color-border: #334155;
+}
+
+[data-theme="light"] {
+    --color-bg: #f8fafc;
+    --color-card: #ffffff;
+    --color-primary: #0284c7;
+    --color-text: #0f172a;
+    --color-border: #e2e8f0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1 { color: var(--color-primary); margin-bottom: 15px; }
+
+.palette { display: flex; gap: 10px; margin-top: 20px; }
+.swatch { padding: 10px; border-radius: 6px; font-weight: bold; font-size: 0.8rem; }
+.sw-primary { background-color: var(--color-primary); color: var(--color-bg); }
+.sw-bg { background-color: var(--color-bg); border: 1px solid var(--color-border); }
+.sw-card { background-color: var(--color-card); border: 1px solid var(--color-border); }

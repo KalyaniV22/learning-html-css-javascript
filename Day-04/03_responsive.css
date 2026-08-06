@@ -1,0 +1,41 @@
+/* Day 04 Exercise 03 - Responsive Stylesheet */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 20px;
+    text-align: center;
+}
+
+/* BASE STYLES: Mobile Default (< 600px) */
+.view-indicator::after { content: "📱 Current View: Mobile (< 600px)"; color: #f43f5e; font-weight: bold; }
+
+.responsive-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    font-weight: bold;
+}
+
+/* TABLET MEDIA QUERY (>= 600px) */
+@media (min-width: 600px) {
+    .view-indicator::after { content: "📱 Current View: Tablet (600px - 1024px)"; color: #a855f7; }
+    .responsive-grid { flex-direction: row; flex-wrap: wrap; }
+    .card { flex: 1 1 45%; }
+}
+
+/* DESKTOP MEDIA QUERY (>= 1024px) */
+@media (min-width: 1024px) {
+    .view-indicator::after { content: "💻 Current View: Desktop (>= 1024px)"; color: #38bdf8; }
+    .responsive-grid { flex-direction: row; }
+    .card { flex: 1; }
+}
