@@ -1,24 +1,18 @@
-/* Day 05 Exercise 01 - Variables & Data Types Script */
+const developerName = "Kalyani Velukar";
+let currentDay = 5; 
+const isEnrolled = true; 
+let capstoneProject = null; 
+let upcomingTopic; 
 
-// 1. Variable Declarations
-const developerName = "Kalyani Velukar"; // String (Immutable reference)
-let currentDay = 5; // Number
-const isEnrolled = true; // Boolean
-let capstoneProject = null; // Null
-let upcomingTopic; // Undefined
-
-// 2. Logging Data Types
 console.log("Developer Name:", developerName, "| Type:", typeof developerName);
 console.log("Current Day:", currentDay, "| Type:", typeof currentDay);
 console.log("Is Enrolled:", isEnrolled, "| Type:", typeof isEnrolled);
 console.log("Capstone Project:", capstoneProject, "| Type:", typeof capstoneProject);
 console.log("Upcoming Topic:", upcomingTopic, "| Type:", typeof upcomingTopic);
 
-// 3. Template Literals (``)
 const summaryText = `Developer ${developerName} is currently on Day ${currentDay} of the AD TECH MERN Program.`;
 console.log(summaryText);
 
-// Output to DOM
 document.addEventListener("DOMContentLoaded", () => {
     const box = document.getElementById("output-box");
     if (box) {
