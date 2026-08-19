@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JobSearch.com </title>
+  <link rel="stylesheet" href="style1.css"></link>
+</head>
+<body >
+
+  <center>
+    <h1 style="color: whitesmoke; background-color: rgb(28, 28, 123);width: 50%;">JobSearch<small>.com</small></h1>
+    <h1 style= width:50%;text-align:left;>Create Your Account</h1>
+    <h5 style="color: red;width: 50%;text-align: left;">* Required Information</h5>
+
+    <h2 >Basic Information</h2>
+
+    <table cellpadding="8">
+      <tr>
+        <td><label for="em">Email </label>*</td>
+        <td><input type="text" id="em" name="email"></td>
+      </tr>
+      <tr>
+        <td><label for="pw">Password *</label></td>
+        <td><input type="password" id="pw" name="password"></td>
+      </tr>
+      <tr>
+        <td><label for="rp">Retype Password *</label></td>
+        <td><input type="password" id="rp" name="retypepassword"></td>
+      </tr>
+      <tr>
+        <td><label for="fm">First Name *</label></td>
+        <td><input type="text" id="fm" name="firstname"></td>
+      </tr>
+      <tr>
+        <td><label for="ln">Last Name *</label></td>
+        <td><input type="text" id="ln" name="lastname"></td>
+      </tr>
+      <tr>
+        <td><label for="pn">Phone Number *</label></td>
+        <td><input type="text" placeholder="999-999-9999" id="pn" name="phonenumber"></td>
+      </tr>
+      <tr>
+        <td><label for="add">Address *</label></td>
+        <td><input type="text" id="add" name="address"></td>
+      </tr>
+      <tr>
+        <td><label for="cc">City *</label></td>
+        <td><input type="text" id="cc" name="city"></td>
+      </tr>
+      <tr>
+        <td><label for="pe">Province *</label></td>
+        <td>
+        <select id="pe" name="province" style="width: 100%; padding: 5px;">
+        <option value="" disabled selected>Select</option>
+        <option value="Alberta">Alberta</option>
+        <option value="diploma">Gjrat</option>
+        <option value="bachelor">Maharastra</option>
+        <option value="master">Punjab</option>
+        
+      </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="cy">Country *</label></td>
+        <td><input type="text" id="cy" name="country"></td>
+      </tr>
+    </table>
+
+    <h2 >Education</h2>
+
+<table cellpadding="8">
+  <tr>
+    <td><label for="sc">School *</label></td>
+    <td><input type="text" id="sc" name="school"></td>
+  </tr>
+  <tr>
+    <td><label for="pm">Program *</label></td>
+    <td><input type="text" id="pm" name="program"></td>
+  </tr>
+  <tr>
+    <td><label for="el">Education Level *</label></td>
+    <td>
+      <select id="el" name="educationlevel" style="width: 100%; padding: 5px;">
+        <option value="" disabled selected>Select</option>
+        <option value="highschool">High School</option>
+        <option value="diploma">Diploma</option>
+        <option value="bachelor">Bachelor's Degree</option>
+        <option value="master">Master's Degree</option>
+        <option value="phd">Ph.D.</option>
+      </select>
+    </td>
+  </tr>
+      
+        <tr>
+  <td colspan="2" align="center">
+    <fieldset style="border: 2px solid gray; width: 90%; padding: 10px;">
+      <legend style="font-weight: bold;">Education Status</legend>
+
+      <input type="radio" id="graduated" name="edu_status" value="Graduated">
+      <label for="graduated">Graduated</label><br>
+
+      <input type="radio" id="enrolled" name="edu_status" value="Currently Enrolled">
+      <label for="enrolled">Currently Enrolled</label><br>
+
+      <input type="radio" id="notgrad" name="edu_status" value="Did Not Graduate">
+      <label for="notgrad">Did Not Graduate</label>
+    </fieldset>
+  </td>
+</tr>
+          
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td><label for="gd">Graduation Date</label></td>
+    <td><input type="text" id="gd" name="graduationdate"></td>
+  </tr>
+</table>
+      </tr>
+    </table>
+
+    <h2>Work Experience</h2>
+
+    <table cellpadding="8">
+      <tr>
+        <td><label for="emp">Employer</label></td>
+        <td><input type="text" id="emp" name="employer"></td>
+      </tr>
+      <tr>
+        <td><label for="jt">Job Title</label></td>
+        <td><input type="text" id="jt" name="jobtitle"></td>
+      </tr>
+      <tr>
+        <td><label for="jd">Job Duty</label></td>
+        <td><textarea id="jd" name="jobduty" rows="4" cols="25"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="wy">Worked Year</label></td>
+        <td>
+          <select id="wy" name="worked year" style="width: 100%; padding: 5px;">
+        <option value="" disabled selected>Select</option>
+        <option value="twfv">2025</option>
+        <option value="twfr">2024</option>
+        <option value="twt">2023</option>
+        <option value="twtw">2022</option>
+        
+      </select>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Attachments</h2>
+
+    <table cellpadding="8">
+      <tr>
+        <td><label for="file">Attachments:</label></td>
+        <td><input type="file" id="file" name="res"></td>
+
+       
+
+
+</table>
+      </tr>
+    </table>
+
+    <br>
+    <input type="submit" value="Apply" style=" background-color: rgb(196, 10, 10); color: white ; border-radius: 3px; ">
+    <input type="reset" value="Reset" style=" background-color:rgb(14, 199, 14); color: white; border-radius: 3px;">
+
+
+
+
+  </center>
+</body>
+</html>
